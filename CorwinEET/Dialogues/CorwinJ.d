@@ -126,13 +126,14 @@ END
 CHAIN
 IF~Global("EECorwoodland","LOCALS",1)~THEN BDCorwiJ woodl1
 ~I do better in the city than the woods but it's been a lifetime since I last left Baldur's Gate.~
+DO~SetGlobal("EECorwoodland","LOCALS",2)~
 END
 ++~I grew up behind the walls of Candlekeep. Compared to that, your city is a small universe in itself.~+ woodl2
 ++~You sound like a drow out on the surface. These are just trees instead of bricks.~+ woodl2
 
 CHAIN
 IF~~THEN BDCorwiJ  woodl2
-~Did I sound like complaining? I was just considering the lifestyle I have adjusted to. Rohma makes evrything bearable. Trees and grass are fine, but she's what I really have trouble being away from.~
+~Did I sound like complaining? I was just considering the lifestyle I have adjusted to. Rohma makes everything bearable. Trees and grass are fine, but she's what I really have trouble being away from.~
 END
 ++~(Grin) I do anything to entertain my troops and keep the spirit up.~+ woodl3
 ++~You're a city child and a family woman. Something rare in my experience. Not bad.~+ woodl3
