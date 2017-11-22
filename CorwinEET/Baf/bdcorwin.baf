@@ -47,11 +47,21 @@ SetGlobal("EEMetRohma","Global",2)
 END
 
 IF
-OR(4)
+AreaType(FOREST)
+Global("EECorwoodland","LOCALS",0)
+Delay(30)
+THEN
+RESPONSE #100
+SetGlobal("EECorwoodland","LOCALS",1)
+END
+
+IF
+OR(5)
 Global("EEOwnHouse","Locals",1)
 Global("EEMetRohma","Global",2)
 Global("EECorDpl","BG0603",1)
 Global("EECorDpl","BG0128",1)
+Global("EECorwoodland","LOCALS",1)
 InParty(Myself)
 !See([ENEMY])
 CombatCounter(0)

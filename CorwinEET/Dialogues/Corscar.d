@@ -66,7 +66,7 @@ IF~~THEN DO~JoinParty()~EXIT
 END
 
 IF~~THEN BEGIN CanrJoin3
-SAY~And I have things to do in the Fist. I will not waste my time with you any longer. Farewell.~
+SAY~And I have things to do in the Fist. I will not waste my time with you any longer. You're making a mistake, but it's your mistake to make. Take care.~
 IF~~THEN DO~SetGlobal("EECorwinBG1","Global",51) EscapeAreaDestroy(50)~EXIT
 END
 

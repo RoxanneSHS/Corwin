@@ -122,3 +122,22 @@ IF~~THEN BDCorwiJ Sardpl6
 ~Most of them are despiteful but still acting somehow within the law. I suspect Sarevok Anchev to venture further than the rest.~
 END
 ++~That Sarevok we heard about, but who is he?~+ Sardpl4
+
+CHAIN
+IF~Global("EECorwoodland","LOCALS",1)~THEN BDCorwiJ woodl1
+~I do better in the city than the woods but it's been a lifetime since I last left Baldur's Gate.~
+END
+++~I grew up behind the walls of Candlekeep. Compared to that, your city is a small universe in itself.~+ woodl2
+++~You sound like a drow out on the surface. These are just trees instead of bricks.~+ woodl2
+
+CHAIN
+IF~~THEN BDCorwiJ  woodl2
+~Did I sound like complaining? I was just considering the lifestyle I have adjusted to. Rohma makes evrything bearable. Trees and grass are fine, but she's what I really have trouble being away from.~
+END
+++~(Grin) I do anything to entertain my troops and keep the spirit up.~+ woodl3
+++~You're a city child and a family woman. Something rare in my experience. Not bad.~+ woodl3
+++~Inevitably our course will lead us back to your hometown sooner or later. So much is for sure.~+ woodl3
+
+CHAIN
+IF~~THEN BDCorwiJ  woodl3
+~In your special way, you make a good officer, <CHARNAME>.~EXIT
