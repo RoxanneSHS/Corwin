@@ -4,6 +4,8 @@ ADD_TRANS_ACTION Jhasso BEGIN 6 END BEGIN 0 END ~ SetGlobal("EECorDpl","BG0603",
 
 ADD_TRANS_ACTION Jhasso BEGIN 18 END BEGIN 0 END ~ SetGlobal("EECorDpl","BG0603",1)~
 
+ADD_TRANS_ACTION Aldeth BEGIN 27 END BEGIN 0 END ~ SetGlobal("EECorDpl","BG0128",1)~
+
 I_C_T SCAR 7 EECorwinScar
 == SCAR IF ~AreaCheck("BG0900")  ~ THEN ~And..., <CHARNAME>, it may be a good idea to have someone at your side in those missions who knows a bit about this town and its subtleties.~
 == BDCorwin IF ~AreaCheck("BG0900") ~ THEN ~A bit, commander Scar?~
