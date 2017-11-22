@@ -1,0 +1,26 @@
+// Corwin NPC for EET
+
+BACKUP ~CorwinEET/backup~
+AUTHOR ~Roxanne - Send PM to Roxanne at SHSForums.net~
+
+VERSION ~v0.05~
+AUTO_TRA ~CorwinEET/TRA/%s~
+
+LANGUAGE ~English~ ~english~ ~CorwinEET/Tra/CorwinEET.tra~
+
+BEGIN
+~Corwin NPC for EET~
+REQUIRE_PREDICATE GAME_IS ~eet~ ~This mod is exclusive for EET games~
+
+COMPILE 
+~CorwinEET/Dialogues~ 
+
+EXTEND_TOP ~bdcorwin.bcs~ ~CorwinEET/Baf/bdcorwin.baf~
+EXTEND_TOP ~BD0101.bcs~ ~CorwinEET/Baf/BD0101.baf~
+EXTEND_TOP ~bg1317.bcs~ ~CorwinEET/Baf/bg1317Rohma.baf~
+
+
+
+COPY_EXISTING ~begbax_c.cre~ ~override~
+              WRITE_ASCII 0x280 ~begbax_c~
+

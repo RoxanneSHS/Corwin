@@ -1,0 +1,15 @@
+IF
+Global("EEMetRohma","Global",3)
+InActiveArea("bdrohma")
+THEN
+RESPONSE #100
+ActionOverride("bdrohma",DestroySelf())
+END
+
+IF
+Global("EEMetRohma","Global",3)
+InActiveArea("bdaudam")
+THEN
+RESPONSE #100
+ActionOverride("bdaudam",DestroySelf())
+END
