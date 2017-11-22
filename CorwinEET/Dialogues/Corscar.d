@@ -53,4 +53,26 @@ SAY~As you wish. Take care of yourself.~
 IF~~THEN DO~SetGlobal("EECorwinBG1","Global",61) EscapeAreaDestroy(50)~EXIT
 END
 
+IF WEIGHT #-6~Global("bd_joined","locals",0) Global("EndofBG1","Global",0) ~THEN BEGIN getgone
+SAY~<CHARNAME>. What do you need?~
+IF~~THEN REPLY~I want you to come with me again.~GOTO CanrJoin2
+IF~~THEN REPLY~I'm sorry but I have no further need of you, Captain.~GOTO CanrJoin3
+IF~~THEN REPLY~I want you to wait here for me, Corwin.~GOTO CanrJoin3
 END
+
+IF~~THEN BEGIN CanrJoin2
+SAY~I'm happy to lend my aid. Let's go.~
+IF~~THEN DO~JoinParty()~EXIT
+END
+
+IF~~THEN BEGIN CanrJoin3
+SAY~And I have things to do in the Fist. I will not waste my time with you any longer. Farewell.~
+IF~~THEN DO~SetGlobal("EECorwinBG1","Global",51) EscapeAreaDestroy(50)~EXIT
+END
+
+END
+
+I_C_T Angelo 0 EEAngeloCaught
+==Angelo IF~InParty("Corwin")~THEN~Ha, *Captain* Corwin, what a pleasure. You in that party makes you the traitor. I coudn't have plotted that any better than you do yourself.~
+==BDCorwiJ IF~InParty("Corwin")~THEN~The traitor Dorsan. Your reign here will be short. There are more loyal officers in Baldur's Gate than your limited scheming can silence.~
+==Angelo IF~InParty("Corwin")~THEN~I can at least silence you. Guards! Shut up that noisy wench. I have wasted too much time already on the case of these wretched assassins.~DO~ActionOverride("Corwin",ApplyDamagePercent("Corwin",25,CRUSHING)) ~END
