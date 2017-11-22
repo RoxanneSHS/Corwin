@@ -32,3 +32,7 @@ SAY NAME2 @002
 SAY DESC @003
 SAY 0xce @001
 COPY ~CorwinEET//ITM/EEAmul.bam~ ~override~
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bgsleep.spl~ THEN BEGIN
+COPY ~CorwinEET//ITM/bgsleep.spl~ ~override~
+END
