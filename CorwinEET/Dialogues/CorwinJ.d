@@ -77,9 +77,9 @@ IF~~THEN BDCorwiJ Home15
 ==BDAudam~Take care, daughter, don't worry about us. We wanted go to the Hall of Wonders, Rohma. Forgot already?~DO~EscapeAreaDestroy(25)~EXIT
 
 CHAIN
-IF~Global("EECorDpl","BG0603",1)~THEN BDCorwiJ Sardpl1
+IF~OR(2) Global("EECorDpl","BG0128",1) Global("EECorDpl","BG0603",1)~THEN BDCorwiJ Sardpl1
 ~Once more those doppelgangers...there is a pattern here and it's not the first time my suspicions have been proven right.~
-DO~SetGlobal("EECorDpl","BG0603",2)~
+DO~SetGlobal("EECorDpl","BG0603",2) SetGlobal("EECorDpl","BG0128",2)~
 END
 ++~You're supposed to be my advisor of those secrets of your town, so?~+ Sardpl2
 ++~Let's compare notes, then, Captain.~+ Sardpl2
