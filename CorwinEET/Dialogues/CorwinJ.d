@@ -40,7 +40,7 @@ IF~~THEN BDRohma Home11
 ~I'm not a child. I'm—one-two-three-four-five—five years old.~
 END
 ++~I stand corrected. ~EXTERN BDCorwiJ Home12
-++~Treasure your years, whatever their number, child—for they will pass quickly.~EXTERN BDRohma Home14
+++~Treasure your years, whatever their number, child - for they will pass quickly.~EXTERN BDRohma Home14
 
 CHAIN
 IF~~THEN BDCorwiJ Home13

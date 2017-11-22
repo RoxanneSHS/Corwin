@@ -5,8 +5,8 @@ Global("EEMetRohma","Global",0)
 THEN
 RESPONSE #100
 SetGlobal("EEMetRohma","Global",1)
-CreateCreature("bdrohma",[245.375],11)
-CreateCreature("bdaudam",[154.341],13)
+CreateCreature("bdrohma",[285.319],9)
+CreateCreature("bdaudam",[454.306],7)
 END
 
 IF
