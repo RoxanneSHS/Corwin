@@ -24,6 +24,7 @@ AreaCheck("bg1317")
 See("BDaudam")
 THEN
 RESPONSE #100
+FaceObject("BDrohma")
 SetGlobal("EEMetRohma","Global",2)
 END
 
