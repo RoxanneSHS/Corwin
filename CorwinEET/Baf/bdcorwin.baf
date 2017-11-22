@@ -71,3 +71,12 @@ THEN
 RESPONSE #100
 StartDialogNoSet(Player1)
 END
+
+IF
+!Global("EECorwinBG1","Global",0)
+AreaCheck("BD1000")
+HasItem("EEAmul",Myself) 
+THEN
+RESPONSE #100
+DestroyItem("EEAmul") 
+END

@@ -1,0 +1,12 @@
+IF
+InParty("Corwin")
+Global("EECoramul","BG0300",0)
+THEN
+RESPONSE #100
+SetGlobal("EECoramul","BG0300",1)
+ActionOverride("Corwin",CreateItem("EEAmul",0,0,0)) 
+ActionOverride("Corwin",FillSlot(SLOT_AMULET))
+END
+
+
+

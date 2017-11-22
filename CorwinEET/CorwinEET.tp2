@@ -18,9 +18,17 @@ COMPILE
 EXTEND_TOP ~bdcorwin.bcs~ ~CorwinEET/Baf/bdcorwin.baf~
 EXTEND_TOP ~BD0101.bcs~ ~CorwinEET/Baf/BD0101.baf~
 EXTEND_TOP ~bg1317.bcs~ ~CorwinEET/Baf/bg1317Rohma.baf~
+EXTEND_TOP ~BG0300.bcs~ ~CorwinEET/Baf/BG0300.baf~
+
 
 
 
 COPY_EXISTING ~begbax_c.cre~ ~override~
               WRITE_ASCII 0x280 ~begbax_c~
 
+COPY ~CorwinEET//ITM/EEAmul.itm~ ~override~
+SAY NAME1 @002
+SAY NAME2 @002
+SAY DESC @003
+SAY 0xce @001
+COPY ~CorwinEET//ITM/EEAmul.bam~ ~override~
