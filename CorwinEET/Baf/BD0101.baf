@@ -1,15 +1,18 @@
 IF
 Global("EEMetRohma","Global",3)
-InActiveArea("bdrohma")
+InActiveArea("bdrohma") 
 THEN
 RESPONSE #100
-ActionOverride("bdrohma",DestroySelf())
+Deactivate("bdrohma")
+SetGlobal("bd_rohma_banter","bd0101",99)
+SetGlobal("bd_corwin_rohma_timer","bd0101",99999999)
+Continue()
 END
 
 IF
 Global("EEMetRohma","Global",3)
-InActiveArea("bdaudam")
+InActiveArea("bdaudam") 
 THEN
 RESPONSE #100
-ActionOverride("bdaudam",DestroySelf())
+Deactivate("bdaudam")
 END
