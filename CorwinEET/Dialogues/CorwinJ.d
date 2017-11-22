@@ -72,6 +72,6 @@ IF~~THEN BDCorwiJ Home15
 ~They'll do what they have to.~
 ==BDRohma~Just like you?~
 ==BDCorwiJ~Exactly like that.~
-=Now, you do what your grampa says while I'm gone, all right?~
+=~Now, you do what your grampa says while I'm gone, all right?~
 ==BDRohma~I will, Mama.~DO~EscapeAreaDestroy(25)~
 ==BDAudam~Take care, daughter, don't worry about us. We wanted go to the Hall of Wonders, Rohma. Forgot already?~DO~EscapeAreaDestroy(25)~EXIT
