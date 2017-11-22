@@ -29,9 +29,10 @@ SetGlobal("EEMetRohma","Global",2)
 END
 
 IF
-OR(2)
+OR(3)
 Global("EEOwnHouse","Locals",1)
 Global("EEMetRohma","Global",2)
+Global("EECorDpl","BG0603",1)
 InParty(Myself)
 !See([ENEMY])
 CombatCounter(0)
