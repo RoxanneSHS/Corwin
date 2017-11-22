@@ -142,3 +142,33 @@ END
 CHAIN
 IF~~THEN BDCorwiJ  woodl3
 ~In your special way, you make a good officer, <CHARNAME>.~EXIT
+
+CHAIN
+IF~Global("EECorFriend","Locals",1)~THEN BDCorwiJ Howcome1
+~I'm wondering how you became involved in this adventure in the first place, <CHARNAME>?~
+DO~SetGlobal("EECorFriend","Locals",2)~
+=~Scar and me heard about your deeds but we were not sure about your motivation. We only found that you'd be a most welcome ally.~
+END
+++~And that's probably all you need to know about it, Captain.~+ Howcome2
+++~This is a long story by now, Corwin, and most likely one to end with Sarevok.~+ Howcome3
+IF~CheckStatGT(Player1,11,INT)~THEN REPLY~Maybe telling all that has happened in such a short time to an unbiased listener helps both of us. We may both see clearer afterward. Looking back at it in context may make us all aware of details we could have missed.~+ Howcome3
+
+CHAIN
+IF~~THEN BDCorwiJ Howcome2
+~Just as you like, <PRO_SIRMAAM>, I'm sure our comrads can answer this just as well as yourself.~DO~RealSetGlobalTimer("EECorBanT","Locals",2800)~EXIT
+
+CHAIN
+IF~~THEN BDCorwiJ Howcome3
+~I'm a pretty good listener and this story is one to interest me personally.~
+END
+++~It all started with my foster father Gorion notifying me one morning that we immediately had to leave our home at Candlekkep...(You tell her your story.)~DO~RealSetGlobalTimer("EECorBanT","Locals",2800)~EXIT
+
+CHAIN
+IF~Global("EECorFriend","Locals",3)~THEN BDCorwiJ Friend10
+~Friend 1~
+DO~SetGlobal("EECorFriend","Locals",4)~EXIT
+
+CHAIN
+IF~Global("EECorFriend","Locals",5)~THEN BDCorwiJ Friend20
+~Friend 2~
+DO~SetGlobal("EECorFriend","Locals",6)~EXIT
