@@ -73,6 +73,16 @@ StartDialogNoSet(Player1)
 END
 
 IF
+HPLT(Myself,11)
+HasItem("EEAmul",Myself)
+THEN
+RESPONSE #100
+ReallyForceSpellRES("BGSleep",Myself) 
+Wait(3)
+ReallyForceSpell(Myself,HEAL_NO_VISUAL) 
+END
+
+IF
 !Global("EECorwinBG1","Global",0)
 AreaCheck("BD1000")
 HasItem("EEAmul",Myself) 

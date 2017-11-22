@@ -18,7 +18,7 @@ COMPILE
 EXTEND_TOP ~bdcorwin.bcs~ ~CorwinEET/Baf/bdcorwin.baf~
 EXTEND_TOP ~BD0101.bcs~ ~CorwinEET/Baf/BD0101.baf~
 EXTEND_TOP ~bg1317.bcs~ ~CorwinEET/Baf/bg1317Rohma.baf~
-EXTEND_TOP ~BG0300.bcs~ ~CorwinEET/Baf/BG0300.baf~
+EXTEND_TOP ~BG0800.bcs~ ~CorwinEET/Baf/BG0800.baf~
 
 
 
