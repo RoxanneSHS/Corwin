@@ -6,8 +6,8 @@ Global("EECorwinBG1","Global",51)
 THEN
 RESPONSE #100
 SetGlobal("bd_corwin_glint","BD1000",1)
-MoveGlobal("bd1000","Corwin",[550.3520]) 
-ChangeSpecifics("corwin",ALLIES)  // Corwin
+MoveGlobal("bd1000","Corwin",[530.3520]) 
+ChangeSpecifics("corwin",ALLIES)  
 ActionOverride("corwin",ChangeAIScript("bdasc3",CLASS))
 ActionOverride("corwin",ChangeAIScript("BDSHOUT",RACE))
 ActionOverride("corwin",ChangeAIScript("BDFIGH01",GENERAL))
@@ -19,7 +19,6 @@ ActionOverride("glint",ChangeAIScript("bdasc3",CLASS))
 ActionOverride("glint",ChangeAIScript("BDSHOUT",RACE))
 ActionOverride("glint",ChangeAIScript("BDCLTH01",GENERAL))
 ActionOverride("glint",ChangeAIScript("",DEFAULT))
-Continue()
 END
 
 IF
@@ -27,7 +26,7 @@ Global("bd_corwin_glint","BD1000",0)
 THEN
 RESPONSE #100
 SetGlobal("bd_corwin_glint","BD1000",1)
-CreateCreature("Corwin7",[550.3520],2)
+CreateCreature("Corwin7",[530.3520],2)
 ActionOverride("CORWIN",MakeGlobal())
 ChangeSpecifics("corwin",ALLIES) 
 ActionOverride("corwin",ChangeAIScript("bdcorwin",OVERRIDE))
