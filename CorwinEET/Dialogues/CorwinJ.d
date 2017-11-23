@@ -155,7 +155,10 @@ IF~CheckStatGT(Player1,11,INT)~THEN REPLY~Maybe telling all that has happened in
 
 CHAIN
 IF~~THEN BDCorwiJ Howcome2
-~Just as you like, <PRO_SIRMAAM>, I'm sure our comrads can answer this just as well as yourself.~DO~RealSetGlobalTimer("EECorBanT","Locals",2800)~EXIT
+~Just as you like, <PRO_SIRMAAM>, I'm sure our comrads can answer this just as well as yourself.~DO~RealSetGlobalTimer("EECorBanT","Locals",2800)~
+==Bimoen IF~InParty("Imoen2")~THEN~Sure, Cory, I'll tell you things about <PRO_HIMHER> that <PRO_HESHE> might wish nobody knows, ha.~
+==BJAhei IF~InParty("Imoen2")~THEN~Ther's no reason to hide these things from a comrade. We may spend some time this evening, Captain, and I'll gladly answer your questions.~
+EXIT
 
 CHAIN
 IF~~THEN BDCorwiJ Howcome3
