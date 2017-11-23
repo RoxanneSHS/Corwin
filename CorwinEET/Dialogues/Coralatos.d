@@ -14,3 +14,9 @@ IF~~THEN Alatos Alert2
 ==BDCorwiJ~<CHARNAME>, you're an idiot. It's wonder you made it this far.~
 END
 ++~Wait...~EXTERN Alatos 3
+
+I_C_T Shvert 0 EECorring
+==BDCorwiJ IF~InParty("Corwin")~THEN~Where did you get this ring you carry, creature?~
+==Shvert IF~InParty("Corwin")~THEN~Belongs to Child of Schlumpsha now, all found in sewer belongs to Children of Schlumpsha, you stay away!~
+==BDCorwiJ IF~InParty("Corwin")~THEN~I've no intention to take this from you, creature, if *he* throws it away...it's worth nothing to me today.~
+==BDCorwiJ IF~InParty("Corwin")~THEN~Let's forget it, <CHARNAME>, I gave that ring once to Beno. This is the best use for it now. Let's leave this poor creature now, please.~END

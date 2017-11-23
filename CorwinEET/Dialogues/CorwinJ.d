@@ -172,3 +172,56 @@ CHAIN
 IF~Global("EECorFriend","Locals",5)~THEN BDCorwiJ Friend20
 ~Friend 2~
 DO~SetGlobal("EECorFriend","Locals",6)~EXIT
+
+CHAIN
+IF~Global("EECorBeno","bg0224",1)~THEN BDCorwiJ Beno1
+~(Corwin has grabbed your arm and causes you to stop and face her. She seems to be slightly agitated.)~
+DO~SetGlobal("EECorBeno","bg0224",2)~
+=~Listen for a minute, <CHARNAME>, I need to tell you something about my past...it may become relevant pretty soon.~
+END
+++~You could have chosen a better place than this for conversation, Corwin.~ + Beno2
+++~Your past in the...sewers of Baldur's Gate, Captain?~+ Beno2
+++~Well, if you find this *location* appropriate, I will listen.~+ Beno2
+
+CHAIN
+IF~~THEN BDCorwiJ Beno2
+~This is the most appropriate place for what I have to say, believe me. Somewhere around here is the entrance to the Undercellars, a lawless area of shady entertainment, and with a good chance to meet the man I need to inform you about.~
+DO~SetGlobal("bd_famari_talk","locals",1)~
+=~His name's Beno Famari. And it's not him I'm worried about, but you need to understand my reactions if we meet. Because if that happens, there's a better than good chance I'll kill him...again.~
+END
+++~I need to know exactly what's going on, Corwin.~+ Beno3
+++~We'd better get out of here, then.~+ Beno4
+
+CHAIN
+IF~~THEN BDCorwiJ Beno3
+~Fine. Beno and I were... together. It was a long time ago, and it didn't end well, especially for him. I got Rohma, so I'm not complaining.~[BD52083]
+END
+++~He fathered your daughter?~+ Beno5
+++~This Beno—I take it he hasn't been much involved in Rohma's life.~+ Beno5
+
+CHAIN
+IF~~THEN BDCorwiJ Beno4
+~Thank you, <CHARNAME>. I'd appreciate this. ~[BD58487]
+=~I'm just afraid, I can't hide from my past without endangering our mission.~
+END
+++~I need to know exactly what's going on, Corwin.~+ Beno3
+++~Or might you be able to gather some intelligence about the current crisis? Is he involved?~+ Beno7
+
+CHAIN
+IF~~THEN BDCorwiJ Beno5
+~He was there when she was conceived. He was never her father. When I told him about Rohma...~[BD52089]
+=~I was young and stupid then. Becoming a mother smartened me up fast.~[BD66687]
+=~Whatever I do in this life, whatever regrets I have, Rohma's not one of them. She never will be. I love her. Which is just one of the many reasons I'd rather avoid dying here.~[BD52094]
+END
+++~You raised a beautiful and intelligent child. I hope that the current crisis will not take you away from her too long.~+ Beno6
+++~The smart thing for us to do would be to leave this place.~+ Beno4
+
+CHAIN
+IF~~THEN BDCorwiJ Beno6
+~There are three things in my life that matter to me, <CHARNAME>. My daughter, my father, and the Flaming Fist. Each saved me, in their own way. When one of them calls on me, I answer. Always.~[BD52096] EXIT
+
+CHAIN
+IF~~THEN BDCorwiJ Beno7
+~I can't imagine Beno willingly telling me anything useful. There's no love for me left in his coward heart.~[BD52074]
+END
+++~Left? So there was love once?~+ Beno5

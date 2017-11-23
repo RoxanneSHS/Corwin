@@ -19,9 +19,11 @@ EXTEND_TOP ~bdcorwin.bcs~ ~CorwinEET/Baf/bdcorwin.baf~
 EXTEND_TOP ~BD0101.bcs~ ~CorwinEET/Baf/BD0101.baf~
 EXTEND_TOP ~bg1317.bcs~ ~CorwinEET/Baf/bg1317Rohma.baf~
 EXTEND_TOP ~BG0800.bcs~ ~CorwinEET/Baf/BG0800.baf~
+EXTEND_TOP ~bg0224.bcs~ ~CorwinEET/Baf/bg0224beno.baf~
+EXTEND_TOP ~bd1000.bcs~ ~CorwinEET/Baf/BD1000move.baf~
 
-
-
+COPY_EXISTING ~bd1000.are~ ~override~
+              WRITE_ASCII 0x36bc ~rabbit01~
 
 COPY_EXISTING ~begbax_c.cre~ ~override~
               WRITE_ASCII 0x280 ~begbax_c~

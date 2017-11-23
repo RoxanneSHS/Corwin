@@ -1,0 +1,20 @@
+IF
+InParty("Corwin")
+Global("EEMetRohma","Global",3)
+Global("EECorBeno","bg0224",0)
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("EECorBeno","bg0224",1)
+END
+
+IF
+Global("EECorBeno","bg0224",2)
+InParty("Corwin")
+THEN
+RESPONSE #100
+SetGlobal("EECorBeno","bg0224",3)
+CreateCreature("BDFamari",[266.698],10)
+CreateCreature("BDFamar1",[185.719],11)
+CreateCreature("BDFamar2",[250.770],9)
+END
