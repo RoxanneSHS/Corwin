@@ -78,7 +78,7 @@ IncrementGlobal("EECorFriend","Locals",1)
 END
 
 IF
-OR(9)
+OR(10)
 Global("EEOwnHouse","Locals",1)
 Global("EEMetRohma","Global",2)
 Global("EECorDpl","BG0603",1)
@@ -88,6 +88,7 @@ Global("EECorFriend","Locals",1)
 Global("EECorFriend","Locals",3)
 Global("EECorFriend","Locals",5)
 Global("EECorBeno","bg0224",1)
+Global("EECorBeno","bg0224",5)
 InParty(Myself)
 !See([ENEMY])
 CombatCounter(0)

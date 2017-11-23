@@ -6,6 +6,7 @@ Delay(12)
 THEN
 RESPONSE #100
 SetGlobal("EECorBeno","bg0224",1)
+Continue()
 END
 
 IF
@@ -18,3 +19,16 @@ CreateCreature("BDFamari",[266.698],10)
 CreateCreature("BDFamar1",[185.719],11)
 CreateCreature("BDFamar2",[250.770],9)
 END
+
+IF
+Global("EECorBeno","bg0224",4)
+InParty("Corwin")
+OR(2)
+Dead("BDFamar1")
+Dead("BDFamar2")
+THEN
+RESPONSE #100
+SetGlobal("EECorBeno","bg0224",5)
+END
+
+
