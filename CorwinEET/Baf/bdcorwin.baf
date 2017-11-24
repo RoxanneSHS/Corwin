@@ -78,7 +78,32 @@ IncrementGlobal("EECorFriend","Locals",1)
 END
 
 IF
-OR(10)
+GlobalGT("Chapter","Global",5)
+OR(16)
+AreaCheck("BG4801")
+AreaCheck("BG2616")
+AreaCheck("BG3351")
+AreaCheck("BG3304")
+AreaCheck("BG2301")
+AreaCheck("BG0105")
+AreaCheck("BG0116")
+AreaCheck("BG0119")
+AreaCheck("BG0706")
+AreaCheck("BG4003")
+AreaCheck("BG1001")
+AreaCheck("bh0115")
+AreaCheck("bh0107")
+AreaCheck("BG3357")
+AreaCheck("BG0114")
+AreaCheck("CVRoa2")
+Global("bd_drinks_corwin","global",0)
+THEN
+RESPONSE #100
+SetGlobal("bd_drinks_corwin","global",1)
+END
+
+IF
+OR(11)
 Global("EEOwnHouse","Locals",1)
 Global("EEMetRohma","Global",2)
 Global("EECorDpl","BG0603",1)
@@ -89,6 +114,7 @@ Global("EECorFriend","Locals",3)
 Global("EECorFriend","Locals",5)
 Global("EECorBeno","bg0224",1)
 Global("EECorBeno","bg0224",5)
+Global("bd_drinks_corwin","global",1)
 InParty(Myself)
 !See([ENEMY])
 CombatCounter(0)
