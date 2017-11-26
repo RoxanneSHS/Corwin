@@ -293,12 +293,6 @@ SAY ~Drink up. We've things to do and not much time to do them in.~ [BD35097]
 IF ~~ THEN DO ~AddJournalEntry(@004,INFO) Face(NE)~ EXIT
 END
 
-IF ~~ THEN BEGIN nw133 
-SAY ~A charismatic but sleazy guy. I'm loyal to the Flaming Fist but I doubt that he is. He is supported by someone and rose pretty quick in the ranks. ~ 
-IF ~~ THEN REPLY~You mistrust your own superiors, Captain?~GOTO nw134
-IF ~~ THEN REPLY~Duke Eltan shares your view on this, Captain?~GOTO nw134
-END
-
 IF ~~ THEN BEGIN nw134 
 SAY ~My loyalty is to my hometown and its people - not necessarily to each and every of its representatives. At this moment, <CHARNAME>, you may be the best option for a loyal officer serving Baldur's Gate.~
 IF ~~ THEN REPLY~I won't disappoint you. I can promise you that.~ GOTO nw132
@@ -344,3 +338,13 @@ IF ~~ THEN DO ~AddJournalEntry(@004,INFO)Face(NE)~ EXIT
 END
 END
 
+CHAIN
+IF ~~ THEN BDCorwiJ nw133 
+~A charismatic but sleazy guy. I'm loyal to the Flaming Fist but I doubt that he is. He is supported by someone and rose pretty quick in the ranks. ~ 
+==SHARTJ IF~InParty("SHARTEEL")~ THEN~ Ah, the maggot, the scumbag - that's how the *great hero* ends, a bloody traitor.~
+==BDCorwiJ IF~InParty("SHARTEEL")~ THEN~ You must know him even better than I do, Shar-Teel.~
+==SHARTJ IF~InParty("SHARTEEL")~ THEN~That scoundrel who copulated with that whore who called herself my mother...I have no evidence, I just know this fool too well. This Iron Throne complot is just the kind of thing he would fall for, the prospect of easy money and power and such - the whole package of pathetic male idiocy that attracts leeches like Angelo Dorsan.~
+==BDCorwiJ IF~InParty("SHARTEEL")~ THEN~ You are his daughter? Poor girl, it explains quite a bit of how you became.~
+END
+IF ~~ THEN REPLY~You mistrust your own superiors, Captain?~GOTO nw134
+IF ~~ THEN REPLY~Duke Eltan shares your view on this, Captain?~GOTO nw134
