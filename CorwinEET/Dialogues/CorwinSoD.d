@@ -13,7 +13,26 @@ IF ~Global("EECorwinBG1","Global",1)~ THEN REPLY ~I'll live. But Imoen requires 
 IF ~Global("EECorwinBG1","Global",1)~ THEN REPLY ~Worry about that later, Corwin. We've got to move, there may be more assassins about..~ GOTO New3
 END
 
+ADD_TRANS_TRIGGER BDBelt 40
+~Global("EECorwinBG1","Global",0)~
+
+EXTEND_BOTTOM BDBelt 40
+IF ~Global("EECorwinBG1","Global",1)~ THEN REPLY ~Captain Corwin? I can think of no better companion.~ EXTERN BDSchael New22
+IF ~Global("EECorwinBG1","Global",1)~ THEN REPLY ~So we're headed to the nearest tavern, I presume? Just like we did before, fine with me.~ EXTERN BDSchael 20
+IF ~Global("EECorwinBG1","Global",1)~ THEN REPLY ~As I've already had one attempt on my life this night, I will permit it.~EXTERN BDSchael New21
+END
+
 APPEND BDSchael
+
+IF~~THEN BEGIN New21
+SAY~We stood through worse together already <CHARNAME>.~
+IF~~THEN GOTO 21
+END
+
+IF~~THEN BEGIN New22
+SAY~I look ahead to continue our acquaintance, <CHARNAME>.~
+IF~~THEN GOTO 23
+END
 
 IF~~THEN BEGIN New6
 SAY~A healer should be here soon.~

@@ -340,7 +340,24 @@ END
 
 IF ~~ THEN BEGIN nw142 
 SAY ~We've a long task together ahead of us. I doubt we'll be strangers long. But it doesn't look like we're going to be friends, either. Nothing wrong with that. Probably best to keep things professional. Drink up and we'll go.~ [BD35163] 
-IF ~~ THEN DO ~AddJournalEntry(@004,INFO)Face(NE)~ EXIT
+IF ~~ THEN DO ~AddJournalEntry(@004,INFO)Face(10)~ EXIT
+END
+
+IF~Global("EECorAnm","BG4800",1)~THEN BEGIN InAmn1
+SAY~I know we need to be here on your task, <CHARNAME>, I just hope the presence of a Flaming Fist officer doesn't get you in trouble. Tension is growing with Amn.~
+IF~~THEN REPLY~Nashkel is not Anminsh heartland, Corwin. We have a good reputation here due to our former deeds. Anyway, we will make it quick. Your concern is noted, Captain.~+ InAmn2
+IF~~THEN REPLY~*Our* task, Captain, and if anyone gets into trouble it's *we*. This town owes us and I hope they don't forget it. Otherwise, *they* may get into trouble.~+ InAmn2
+IF~~THEN REPLY~Afraid, Captain? Far from your base and without a squadron at your heels?~+ InAmn3
+END
+
+IF~~THEN BEGIN InAmn2
+SAY~I just want to make sure *we* don't load more on our platters than we need. Let's do what must be done and don't strain Tymora too much.~
+IF~~THEN DO~SetGlobal("EECorAnm","BG4800",2)~EXIT
+END
+
+IF~~THEN BEGIN InAmn3
+SAY~(Sarcastic) With you at my side, oh hero, how could I feel afraid...~
+IF~~THEN GOTO InAmn2
 END
 END
 
@@ -354,4 +371,4 @@ IF ~~ THEN BDCorwiJ nw133
 END
 IF ~~ THEN REPLY~You mistrust your own superiors, Captain?~GOTO nw134
 IF ~~ THEN REPLY~Duke Eltan shares your view on this, Captain?~GOTO nw134
-IF ~CheckStatGT(Player1,18,INT)~ THEN REPLY~Hurbold Duethkatha, did not know about this?~ GOTO nw135
+IF ~CheckStatGT(Player1,18,INT)~ THEN REPLY~Hurbold Duethkatha, he did not know about this?~ GOTO nw135
