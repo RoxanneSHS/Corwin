@@ -81,7 +81,7 @@ CHAIN
 IF WEIGHT #-3~GlobalGT("Chapter","GLOBAL",3) InParty("Corwin")~THEN Vai RetGate
 ~Schael! Eh, Captain Corwin, ma'am.~
 ==BDCorwiJ~Jessa, we're among friends here. But listen...~
-=~The official part, Lieutenant Vai, you have orders to return to Baldur's Gate and report back to Scar.~
+=~The official part, Lieutenant Vai, you have orders to return to Baldur's Gate and report back to commander Scar.~
 =~The friendly advice, Jessa, take care and keep your eyes open. There is tension inside the fist and we can't trust everybody blindly anymore. Politics take their toll.~
-==Vai~So there#s truth in the rumours we heard. Well, I trust you, Schael, and my own men, and Scar, Eltan, Laola Axhand and some more.~
+==Vai~So there's truth in the rumours we heard. Well, I trust you, Schael, and my own men, and Scar, Eltan, Laola Axhand and some more.~
 =~(She turns to you.)~EXTERN VAI 6
