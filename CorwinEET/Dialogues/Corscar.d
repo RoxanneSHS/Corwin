@@ -76,3 +76,12 @@ I_C_T Angelo 0 EEAngeloCaught
 ==Angelo IF~InParty("Corwin")~THEN~Ha, *Captain* Corwin, what a pleasure. You in that party makes you the traitor. I coudn't have plotted that any better than you do yourself.~
 ==BDCorwiJ IF~InParty("Corwin")~THEN~The traitor Dorsan. Your reign here will be short. There are more loyal officers in Baldur's Gate than your limited scheming can silence.~
 ==Angelo IF~InParty("Corwin")~THEN~I can at least silence you. Guards! Shut up that noisy wench. I have wasted too much time already on the case of these wretched assassins.~DO~ActionOverride("Corwin",ApplyDamagePercent("Corwin",25,CRUSHING)) ~END
+
+CHAIN
+IF WEIGHT #-3~GlobalGT("Chapter","GLOBAL",3) InParty("Corwin")~THEN Vai RetGate
+~Schael! Eh, Captain Corwin, ma'am.~
+==BDCorwiJ~Jessa, we're among friends here. But listen...~
+=~The official part, Lieutenant Vai, you have orders to return to Baldur's Gate and report back to Scar.~
+=~The friendly advice, Jessa, take care and keep your eyes open. There is tension inside the fist and we can't trust everybody blindly anymore. Politics take their toll.~
+==Vai~So there#s truth in the rumours we heard. Well, I trust you, Schael, and my own men, and Scar, Eltan, Laola Axhand and some more.~
+=~(She turns to you.)~EXTERN VAI 6
