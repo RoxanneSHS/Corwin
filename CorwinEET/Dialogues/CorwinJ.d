@@ -157,14 +157,18 @@ CHAIN
 IF~~THEN BDCorwiJ Howcome2
 ~Just as you like, <PRO_SIRMAAM>, I'm sure our comrads can answer this just as well as yourself.~DO~RealSetGlobalTimer("EECorBanT","Locals",2800)~
 ==Bimoen IF~InParty("Imoen2")~THEN~Sure, Cory, I'll tell you things about <PRO_HIMHER> that <PRO_HESHE> might wish nobody knows, ha.~
-==BJAhei IF~InParty("Imoen2")~THEN~Ther's no reason to hide these things from a comrade. We may spend some time this evening, Captain, and I'll gladly answer your questions.~
+==BJAhei IF~InParty("Jaheira")~THEN~Ther's no reason to hide these things from a comrade. We may spend some time this evening, Captain, and I'll gladly answer your questions.~
 EXIT
 
 CHAIN
 IF~~THEN BDCorwiJ Howcome3
 ~I'm a pretty good listener and this story is one to interest me personally.~
 END
-++~It all started with my foster father Gorion notifying me one morning that we immediately had to leave our home at Candlekkep...(You tell her your story.)~DO~RealSetGlobalTimer("EECorBanT","Locals",2800)~EXIT
+++~It all started with my foster father Gorion notifying me one morning that we immediately had to leave our home at Candlekkep...(You tell her your story.)~DO~RealSetGlobalTimer("EECorBanT","Locals",2800)~+ Howcome4
+
+CHAIN
+IF~~THEN BDCorwiJ Howcome4
+~I see. Thank you, I almost feel like we travel together since significant time.~EXIT
 
 CHAIN
 IF~Global("EECorFriend","Locals",3)~THEN BDCorwiJ Friend10
