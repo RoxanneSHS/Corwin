@@ -87,6 +87,16 @@ SetGlobal("EECorAnm","BG4800",1)
 END
 
 IF
+AreaCheck("BG0112")
+Global("EECorUnderc","BG0112",0)
+See("Harlot")
+GlobalLT("Chapter","Global",7)
+THEN
+RESPONSE #100
+SetGlobal("EECorUnderc","BG0112",1)
+END
+
+IF
 GlobalGT("Chapter","Global",5)
 OR(16)
 AreaCheck("BG4801")
@@ -112,7 +122,7 @@ SetGlobal("bd_drinks_corwin","global",1)
 END
 
 IF
-OR(12)
+OR(13)
 Global("EEOwnHouse","Locals",1)
 Global("EEMetRohma","Global",2)
 Global("EECorDpl","BG0603",1)
@@ -125,6 +135,7 @@ Global("EECorBeno","bg0224",1)
 Global("EECorBeno","bg0224",5)
 Global("bd_drinks_corwin","global",1)
 Global("EECorAnm","BG4800",1)
+Global("EECorUnderc","BG0112",1)
 InParty(Myself)
 !See([ENEMY])
 CombatCounter(0)

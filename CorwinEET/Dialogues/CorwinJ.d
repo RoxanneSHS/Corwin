@@ -376,3 +376,22 @@ END
 IF ~~ THEN REPLY~You mistrust your own superiors, Captain?~GOTO nw134
 IF ~~ THEN REPLY~Duke Eltan shares your view on this, Captain?~GOTO nw134
 IF ~CheckStatGT(Player1,18,INT)~ THEN REPLY~Hurbold Duethkatha, he did not know about this?~ GOTO nw135
+
+CHAIN
+IF~Global("EECorUnderc","BG0112",1)~THEN BDCorwiJ Undercel1
+~They don't even need to bribe the Flaming Fist to do their business down here.~
+DO~SetGlobal("EECorUnderc","BG0112",2)~
+END
+++~I was already wonderng why nobody cares about a Flaming Fist officer walking into here.~+ Undercel2
+++~Let me guess, it's unofficially owned by the Fist to improve their salary?~+ Undercel2
+
+CHAIN
+IF~~THEN BDCorwiJ Undercel2
+~It's Duke Eltan's policy to grant the city what any city of that size needs anyway. He claims that we'd fight a useless battle if we'd try to prevent such locations, so it's better to know where it is and how things are managed and just see that it doesn't get out of bounds.~
+END
+++~A practical man, not bad. So the members of the Flaming Fist are admitted here?~+ Undercel3
+++~No city beyond some size is free of corruption. It's a shame that the Flaming Fist doesn't intervene.~+ Undercel3
+
+CHAIN
+IF~~THEN BDCorwiJ Undercel3
+~Members of the Flaming Fist are free to conduct their private hours as the want. At least within limits...an officer will not visit such a place. I've never been here before though I know pretty well what's going on here.~EXIT
