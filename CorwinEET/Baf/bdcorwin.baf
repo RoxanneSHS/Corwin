@@ -29,7 +29,9 @@ END
 IF
 Global("EECorwinScar","Global",2)
 AreaCheck("bg1300")
-See("Begbax_C")
+OR(2)
+See("Begbax_C")  
+See("Door0316")
 Global("EEOwnHouse","Locals",0)
 THEN
 RESPONSE #100
