@@ -67,11 +67,21 @@ SetGlobal("EECorFriend","Locals",1)
 END
 
 IF
+Global("EECorFriend","Locals",2)
+GlobalGT("EEMetRohma","Global",2)
+RealGlobalTimerExpired("EECorBanT","Locals")
+THEN
+RESPONSE #100
+SetGlobal("EECorFriend","Locals",3)
+RealSetGlobalTimer("EECorBanT","Locals",1800)
+END
+
+IF
 RealGlobalTimerExpired("EECorBanT","Locals")
 !AreaType(DUNGEON)
 OR(2)
-Global("EECorFriend","Locals",2)
-Global("EECorFriend","Locals",4)
+Global("EECorFriend","Locals",3)
+Global("EECorFriend","Locals",5)
 THEN
 RESPONSE #100
 IncrementGlobal("EECorFriend","Locals",1)
@@ -129,8 +139,8 @@ Global("EECorDpl","BG0603",1)
 Global("EECorDpl","BG0128",1)
 Global("EECorwoodland","LOCALS",1)
 Global("EECorFriend","Locals",1)
-Global("EECorFriend","Locals",3)
-Global("EECorFriend","Locals",5)
+Global("EECorFriend","Locals",4)
+Global("EECorFriend","Locals",6)
 Global("EECorBeno","bg0224",1)
 Global("EECorBeno","bg0224",5)
 Global("bd_drinks_corwin","global",1)

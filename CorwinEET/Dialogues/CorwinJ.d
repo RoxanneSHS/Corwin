@@ -171,14 +171,31 @@ IF~~THEN BDCorwiJ Howcome4
 ~I see. Thank you, I almost feel like we travel together since significant time.~EXIT
 
 CHAIN
-IF~Global("EECorFriend","Locals",3)~THEN BDCorwiJ Friend10
-~Friend 1~
-DO~SetGlobal("EECorFriend","Locals",4)~EXIT
+IF~Global("EECorFriend","Locals",4)~THEN BDCorwiJ Friend10
+~I've made a preliminary decision, <CHARNAME>, your recent conduct has assured me of your alignment.~
+DO~SetGlobal("EECorFriend","Locals",5) ~
+END
+++~What are you up to, Captain?~+ Friend11
+++~This is an ambigious statement, can you explain what you mean?~+ Friend11
 
 CHAIN
-IF~Global("EECorFriend","Locals",5)~THEN BDCorwiJ Friend20
+IF~~THEN BDCorwiJ Friend11
+~I want you to see past my appointment as local guide to your quest.~
+=~<CHARNAME>, I have to dedicate my attention to your cause - ah, to our cause, that is. I'm serving my hometown and the Fist, but for the moment I'm also your comrade just like <PLAYER2>, <PLAYER3>, <PLAYER4>, <PLAYER5>, and <PLAYER6>.~
+END
+++~Doesn't that put you into some dilemma, Corwin?~+ Friend12
+++~I hope you set your priorities right, Captain, we may not always be able to act to your codex.~+ Friend12
+
+CHAIN
+IF~~THEN BDCorwiJ Friend12
+~It's not easy for me to forget my officer's duty AT one or the other occasion, but my foremost duty is to our final success. I hope I make no mistake when I think that your actions and fate are essential for a higher goal for Baldur's Gate, far more important than the individual deeds.~
+=~Just know that if you betray my trust, you will make yourself a mighty foe.~
+=~Otherwise...you will find me a loyal companion...maybe a friend in the end.~DO~RealSetGlobalTimer("EECorBanT","Locals",3600)~EXIT
+
+CHAIN
+IF~Global("EECorFriend","Locals",6)~THEN BDCorwiJ Friend20
 ~Friend 2~
-DO~SetGlobal("EECorFriend","Locals",6)~EXIT
+DO~SetGlobal("EECorFriend","Locals",7)RealSetGlobalTimer("EECorBanT","Locals",3600)~EXIT
 
 CHAIN
 IF~Global("EECorBeno","bg0224",1)~THEN BDCorwiJ Beno1
