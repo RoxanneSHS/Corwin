@@ -188,7 +188,7 @@ END
 
 CHAIN
 IF~~THEN BDCorwiJ Friend12
-~It's not easy for me to forget my officer's duty AT one or the other occasion, but my foremost duty is to our final success. I hope I make no mistake when I think that your actions and fate are essential for a higher goal for Baldur's Gate, far more important than the individual deeds.~
+~It's not easy for me to forget my officer's duty at one or the other occasion, but my foremost duty is to our final success. I hope I make no mistake when I think that your actions and fate are essential for a higher goal for Baldur's Gate, far more important than the individual deeds.~
 =~Just know that if you betray my trust, you will make yourself a mighty foe.~
 =~Otherwise...you will find me a loyal companion...maybe a friend in the end.~DO~RealSetGlobalTimer("EECorBanT","Locals",3600)~EXIT
 
@@ -412,3 +412,32 @@ END
 CHAIN
 IF~~THEN BDCorwiJ Undercel3
 ~Members of the Flaming Fist are free to conduct their private hours as the want. At least within limits...an officer will not visit such a place. I've never been here before though I know pretty well what's going on here.~EXIT
+
+CHAIN
+IF~Global("EECorThNotYet","BG1200",1)~THEN BDCorwiJ ThNotYet1
+~The Iron Throne's headquarter, <CHARNAME>. Keep the location memorized but let's move on for now.~
+DO~SetGlobal("EECorThNotYet","BG1200",2)~
+END
+++~I can't wait to pay those bastards my visit, Captain, why wait?~+ ThNotYet2
+++~What, why spare them after all they've done to the Sword Coast - and to me?~+ ThNotYet2
+++~Anything I've missed , Corwin? I thought here was our goal.~+ ThNotYet2
+
+CHAIN
+IF~~THEN BDCorwiJ ThNotYet2
+~I agree that we have any reason to storm this place. Just not now, please, <CHARNAME>.~
+=~Eltan and Scar have their suspicion against the Iron Throne and your experience with the organisation has added more evidence, still, we need to make sure we find out everything before we make our move.~
+=~I suggest to first finish the task that Scar gave us, gather more background information and report to Eltan. We should not assail this mighty organisation without the consent of Eltan and the authorities. It may backfire against us.~
+END
+++~Your position is noted, Captain. Must I remind you that you put yourself under my command?~+ ThNotYet3
+++~Very well, let's make sure that we have enough evidence against them to make it impossible they get their heads out of the noose.~+ ThNotYet3
+++~You turn out to be a nuisance and a hinderance, Captain Corwin. It's best you go back to your master Scar.~+ ThNotYet4
+++~I take you along since you know this town and its proceedings better than me, Corwin. Thanks for the advice.~+ ThNotYet3
+
+CHAIN
+IF~~THEN BDCorwiJ ThNotYet3
+~My advice was meant as that of a companion and, eh, a friend.~EXIT
+
+CHAIN
+IF~~THEN BDCorwiJ ThNotYet4
+~Fine, I have things to do in the Fist. I will not waste my time with you any longer. You're making a mistake, but it's your mistake to make. Take care.~
+DO~SetGlobal("EECorwinBG1","Global",51) EscapeAreaDestroy(50)~EXIT
