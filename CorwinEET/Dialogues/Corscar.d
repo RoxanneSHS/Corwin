@@ -85,3 +85,8 @@ IF WEIGHT #-3~GlobalGT("Chapter","GLOBAL",3) InParty("Corwin")~THEN Vai RetGate
 =~The friendly advice, Jessa, take care and keep your eyes open. There is tension inside the fist and we can't trust everybody blindly anymore. Politics take their toll.~
 ==Vai~So there's truth in the rumours we heard. Well, I trust you, Schael, and my own men, and Scar, Eltan, Laola Axhand and some more.~
 =~(She turns to you.)~EXTERN VAI 6
+
+I_C_T Laola 0 EELaolaCorw
+==BDCorwiJ IF~InParty("Corwin")~THEN~Laola, they already agreed to cooperate with Scar and me as you can see.~
+==Laola IF~InParty("Corwin")~THEN~Oh, Schael, excuse me, Captain Corwin, I didn't see you at first.~
+==Laola IF~InParty("Corwin")~THEN~Yes, Commander Scar told me about your plan to seek <CHARNAME>'s company but wasn't sure if they'd accept the offer. I'm glad they did.~END

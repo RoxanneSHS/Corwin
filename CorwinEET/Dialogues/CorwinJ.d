@@ -194,8 +194,30 @@ IF~~THEN BDCorwiJ Friend12
 
 CHAIN
 IF~Global("EECorFriend","Locals",6)~THEN BDCorwiJ Friend20
-~Friend 2~
-DO~SetGlobal("EECorFriend","Locals",7)RealSetGlobalTimer("EECorBanT","Locals",3600)~EXIT
+~Rohma makes it easy for me and on the other side harder than for most.~
+DO~SetGlobal("EECorFriend","Locals",7)RealSetGlobalTimer("EECorBanT","Locals",3700)~
+END
+++~Your daughter, right. It can't be easy to be mother and Flaming Fist at the same time.~+ Friend21
+++~Your private life is just that, Captain - private. Keep it that way.~DO~SetGlobal("EECorFriend","Locals",77)~+ Friend22
+++~Your father and your task being in your hometown give you a chance to be both, isn't it true?~+ Friend21
+
+CHAIN
+IF~~THEN BDCorwiJ Friend22
+~You're right, <CHARNAME>, forget I mentioned it.~EXIT
+
+CHAIN
+IF~~THEN BDCorwiJ Friend21
+~My current task makes the practical aspects bearable and my father is a great help with taking care of her. There are surely mothers in worse circumstances.~
+=~What I meant is that her existence gives my life the necessary focus it was missing before her birth. And on the other hand gives me more responsibility than being officer already gives me.~
+END
+++~Sounds like you grew up by becoming a mother.~+ Friend23
+++~It doesn't give me responsibility to listen to your laments, woman. It was your choice after all.~DO~SetGlobal("EECorFriend","Locals",77)~+ Friend22
+++~It's hard to imagine that officer Corwin was once a rascal of sorts.~+ Friend23
+
+CHAIN
+IF~~THEN BDCorwiJ Friend23
+~It may not have been the best idea at the time to have a child with a father like...Fanari. But it has changed me and I'm happy it did.~
+=~Anyway - thanks for listening. It's better to move on now. My considerations can wait another day. It's important that we get this job done. And done well.~EXIT
 
 CHAIN
 IF~Global("EECorBeno","bg0224",1)~THEN BDCorwiJ Beno1
@@ -441,3 +463,28 @@ CHAIN
 IF~~THEN BDCorwiJ ThNotYet4
 ~Fine, I have things to do in the Fist. I will not waste my time with you any longer. You're making a mistake, but it's your mistake to make. Take care.~
 DO~SetGlobal("EECorwinBG1","Global",51) EscapeAreaDestroy(50)~EXIT
+
+CHAIN
+IF~Global("EECorMoreTaskSC","bg1100",1)~THEN BDCorwiJ CorMoreTaskSC1
+~I'm glad you accepted the additional tasks, <CHARNAME>.~
+DO~SetGlobal("EECorMoreTaskSC","bg1100",2)~
+END
+++~We can really make use of that extra money.~+ CorMoreTaskSC2
+++~I want to make sure that the right people are on my side when I need them.~+ CorMoreTaskSC3
+++~My golden heart makes me do those deeds.~+ CorMoreTaskSC4
+
+CHAIN
+IF~~THEN BDCorwiJ CorMoreTaskSC2
+~I don't doubt that you spend it well, in all our interest.~EXTERN BDCorwiJ CorMoreTaskSC5
+
+CHAIN
+IF~~THEN BDCorwiJ CorMoreTaskSC3
+~I can't and won't speak for all of the Flaming Fist. The right people have already noticed your behaviour.~EXTERN BDCorwiJ CorMoreTaskSC5
+
+CHAIN
+IF~~THEN BDCorwiJ CorMoreTaskSC4
+~I like that you keep your humour in these time. We need such spirit.~EXTERN BDCorwiJ CorMoreTaskSC5
+
+CHAIN
+IF~~THEN BDCorwiJ CorMoreTaskSC5
+~Whatever...I don't regret my choice to follow you.~EXIT
