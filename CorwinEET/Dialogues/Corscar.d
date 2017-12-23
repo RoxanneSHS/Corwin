@@ -86,5 +86,7 @@ IF WEIGHT #-3~GlobalGT("Chapter","GLOBAL",3) InParty("Corwin")~THEN Vai RetGate
 ==Vai~So there's truth in the rumours we heard. Well, I trust you, Schael, and my own men, and Scar, Eltan, Laola Axhand and some more.~
 =~(She turns to you.)~EXTERN VAI 6
 
-
+INTERJECT Deltan 0 EECorVsIT
+==BDCorwiJ IF~InParty("Corwin")~THEN~Duke Eltan, this is the party that Commander Scar and me have reported about before. <CHARNAME> is the very one who already crossed the Iron Throne's plans in Nashkel and Cloakwood.~
+==Deltan IF~InParty("Corwin")~THEN~Ah, and you, good Corwin have succeeded in joining their party. Very good, so I can speak open about our concerns.~EXTERN Deltan 4
 
