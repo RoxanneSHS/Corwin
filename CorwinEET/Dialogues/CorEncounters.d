@@ -29,3 +29,12 @@ INTERJECT Skie 1 EECorwinSkieBG1
 ==Skie IF~InParty("Corwin") !InParty("Eldoth")~THEN~Oh, Schael, my father never lets me out much. If I could just join the Flaming Fist, I could be free just like you.~
 ==BDCorwiJ IF~InParty("Corwin") !InParty("Eldoth")~THEN~Now...apart from the fact that your father probably never woould agree to it, there's something like discipline very high up in the Fist's rules, while free is...well, it's a dream anyway.~
 ==Skie IF~InParty("Corwin") !InParty("Eldoth")~THEN~Ah, you just wait and see, I tell you, I'll grab my chance if I see it.~DO~EscapeAreaDestroy(30)~EXIT
+
+CHAIN
+IF WEIGHT #-3 ~InParty("Corwin")~THEN Entar EECorwinInEntar2
+~Who are you? What are you doing in my estate?~
+==BDCorwiJ ~Greetings, Duke Entar.~
+==Entar~Ah, the good Captain Corwin. In the current situation one cannot be cautious enough even inside the city.~
+==BDCorwiJ ~The Flaming Fist is in control of the situation, be assured, Sir.~
+==Entar~Hopefully. Even if the likes of you or Scar can't be everywhere at once.~
+=~Well, I have business to attend, excuse me.~DO~EscapeArea()~EXIT
