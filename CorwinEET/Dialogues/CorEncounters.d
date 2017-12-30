@@ -38,3 +38,10 @@ IF WEIGHT #-3 ~InParty("Corwin")~THEN Entar EECorwinInEntar2
 ==BDCorwiJ ~The Flaming Fist is in control of the situation, be assured, Sir.~
 ==Entar~Hopefully. Even if the likes of you or Scar can't be everywhere at once.~
 =~Well, I have business to attend, excuse me.~DO~EscapeArea()~EXIT
+
+CHAIN
+IF WEIGHT #-3 ~InParty("Corwin")~THEN Triado EECorwinInIT
+~Out! Away! Fly while you can! There be madness here and I can stand it no longer!~
+==BDCorwiJ~Madness in this much-lauded tower? That there be malice here, I have no doubt... but madness? Never.~
+==Triado~Then clearly you know it not! Madness seethes here and amongst Sarevok's crazed acolytes it overflows. I'm a simple merchant after a pretty coin but I swear it isn't worth it to suffer this place so long.~
+==BDCorwiJ~Sarevok...<CHARNAME>, we have guessed right all the time. It's time to see that this ends now. In the name of the Flaming Fist, man, speak!~EXTERN Triado 3
