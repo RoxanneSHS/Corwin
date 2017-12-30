@@ -488,3 +488,30 @@ IF~~THEN BDCorwiJ CorMoreTaskSC4
 CHAIN
 IF~~THEN BDCorwiJ CorMoreTaskSC5
 ~Whatever...I don't regret my choice to follow you.~EXIT
+
+CHAIN
+IF~Global("EECorIrThr","LOCALS",1)~THEN BDCorwiJ CorInITFirst1
+~Acolytes, doppelgangers...this Sarevok has established a personal cult here to replace the Iron Throne somehow.~
+DO~SetGlobal("EECorIrThr","LOCALS",2)~
+END
+++~Without the guy himself this turns out to be a dead end.~+ CorInITFirst2
+++~We have nothing to proof to the Duke, so what?~ + CorInITFirst2
+++~They escaped to Candlekeep where we cannot reach them.~+ CorInITFirst3
+
+CHAIN
+IF~~THEN BDCorwiJ CorInITFirst2
+~I propose we report back to Duke Eltan. There we should plan the next steps.~
+=~It seems that we need to go to Candlekeep to find those Iron Throne leaders.~
+END
+++~They escaped to Candlekeep where we cannot reach them.~+ CorInITFirst3
+++~Damned bastards, I hope your superiors won't get upset about our failure here.~+ CorInITFirst3
+
+CHAIN
+IF~~THEN BDCorwiJ CorInITFirst3
+~Why can't we follow them to Candlekeep, <CHARNAME>, it's your home - or at least it was?~
+END
+++~They won't let anyone in there without a valuable tome to present to the library.~+ CorInITFirst4
+
+CHAIN
+IF~~THEN BDCorwiJ CorInITFirst4
+~That makes it important that we consult with Scar and Eltan about it. The dukes should have the means to let us pursue those bastards to Candlekeep.~EXIT

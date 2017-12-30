@@ -157,7 +157,20 @@ SetGlobal("EECorThNotYet","BG1200",1)
 END
 
 IF
-OR(15)
+Global("EECorIrThr","LOCALS",0)
+AreaCheck("BG0615")
+Dead("ZHALIMAR")
+Dead("aasim")
+Dead("Alai")
+Dead("Naaman")
+Delay(16)
+THEN
+RESPONSE #100
+SetGlobal("EECorIrThr","LOCALS",1)
+END
+
+IF
+OR(16)
 Global("EEOwnHouse","Locals",1)
 Global("EEMetRohma","Global",2)
 Global("EECorDpl","BG0603",1)
@@ -173,6 +186,7 @@ Global("EECorAnm","BG4800",1)
 Global("EECorUnderc","BG0112",1)
 Global("EECorThNotYet","BG1200",1)
 Global("EECorMoreTaskSC","bg1100",1)
+Global("EECorIrThr","LOCALS",1)
 InParty(Myself)
 !See([ENEMY])
 CombatCounter(0)
