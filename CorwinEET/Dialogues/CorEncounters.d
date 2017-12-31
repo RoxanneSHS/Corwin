@@ -45,3 +45,15 @@ IF WEIGHT #-3 ~InParty("Corwin")~THEN Triado EECorwinInIT
 ==BDCorwiJ~Madness in this much-lauded tower? That there be malice here, I have no doubt... but madness? Never.~
 ==Triado~Then clearly you know it not! Madness seethes here and amongst Sarevok's crazed acolytes it overflows. I'm a simple merchant after a pretty coin but I swear it isn't worth it to suffer this place so long.~
 ==BDCorwiJ~Sarevok...<CHARNAME>, we have guessed right all the time. It's time to see that this ends now. In the name of the Flaming Fist, man, speak!~EXTERN Triado 3
+
+I_C_T2 Bendal 2 EEBendalCorw2
+==BDCorwiJ IF~InParty("Corwin")~THEN~Am I the only one to think that Koveras sounds like Sarevok spelled backwards.~
+==BDCorwiJ IF~InParty("Corwin")~THEN~We must be careful here, <CHARNAME>, we have not the authority of the Flaming Fist behind us while we're here. Let's try to gain evidence but not confront him here. That must wait until we can face him in Baldur's Gate. Restraint is the order of the day.~END
+
+I_C_T2 Bendal 3 EEBendalCorw3
+==BDCorwiJ IF~InParty("Corwin")~THEN~Am I the only one to think that Koveras sounds like Sarevok spelled backwards.~
+==BDCorwiJ IF~InParty("Corwin")~THEN~We must be careful here, <CHARNAME>, we have not the authority of the Flaming Fist behind us while we're here. Let's try to gain evidence but not confront him here. That must wait until we can face him in Baldur's Gate. Restraint is the order of the day.~END
+
+I_C_T2 Bendal 4 EEBendalCorw4
+==BDCorwiJ IF~InParty("Corwin")~THEN~Am I the only one to think that Koveras sounds like Sarevok spelled backwards.~
+==BDCorwiJ IF~InParty("Corwin")~THEN~We must be careful here, <CHARNAME>, we have not the authority of the Flaming Fist behind us while we're here. Let's try to gain evidence but not confront him here. That must wait until we can face him in Baldur's Gate. Restraint is the order of the day.~END
