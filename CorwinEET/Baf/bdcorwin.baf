@@ -119,7 +119,7 @@ SetGlobal("EECorMoreTaskSC","bg1100",1)
 END
 
 IF
-GlobalGT("Chapter","Global",5)
+GlobalGT("Chapter","Global",6)
 OR(16)
 AreaCheck("BG4801")
 AreaCheck("BG2616")
@@ -136,7 +136,7 @@ AreaCheck("bh0115")
 AreaCheck("bh0107")
 AreaCheck("BG3357")
 AreaCheck("BG0114")
-AreaCheck("CVRoa2")
+AreaCheck("CVRoa7")
 Global("bd_drinks_corwin","global",0)
 THEN
 RESPONSE #100
