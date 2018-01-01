@@ -27,6 +27,9 @@ COPY_EXISTING ~bd1000.are~ ~override~
 
 COPY_EXISTING ~begbax_c.cre~ ~override~
               WRITE_ASCII 0x280 ~begbax_c~
+COPY_EXISTING ~Shista.cre~ ~override~
+              WRITE_ASCII 0x280 ~Shista~ #8
+	      WRITE_ASCII 0x250 ~Initdlg~ #8
 
 COPY ~CorwinEET//ITM/EEAmul.itm~ ~override~
 SAY NAME1 @002

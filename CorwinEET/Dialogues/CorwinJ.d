@@ -515,3 +515,15 @@ END
 CHAIN
 IF~~THEN BDCorwiJ CorInITFirst4
 ~That makes it important that we consult with Scar and Eltan about it. The dukes should have the means to let us pursue those bastards to Candlekeep.~EXIT
+
+CHAIN
+IF~Global("EEBendalCorw2","Global",2)~THEN BDCorwiJ CorInShista1
+~Even here he managed to get the place infiltrated with these creatures.~
+DO~SetGlobal("EEBendalCorw2","Global",3) SetGlobal("EEBendalCorw3","Global",3)SetGlobal("EEBendalCorw4","Global",3)~
+END
+++~I know my old home and its people well enough to tell them apart from any doppelgangers, don't fear.~+ CorInShista2
+++~We can't trust anyone anymore, except ourselves.~+ CorInShista2
+
+CHAIN
+IF~~THEN BDCorwiJ CorInShista2
+~(She attempts a smile that ends up as a grin.) I have started to trust you, <CHARNAME>. Sometimes I trust you more than of my comrades in the Fist by now. There is something foul in our ranks just like it is with people in this place.~EXIT

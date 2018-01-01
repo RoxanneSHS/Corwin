@@ -119,6 +119,18 @@ SetGlobal("EECorMoreTaskSC","bg1100",1)
 END
 
 IF
+AreaCheck("BG2611")
+OR(3)
+Global("EEBendalCorw2","Global",1)
+Global("EEBendalCorw3","Global",1)
+Global("EEBendalCorw4","Global",1)
+Global("EECorwShista","BG2611",1)
+THEN
+RESPONSE #100
+SetGlobal("EEBendalCorw2","Global",2)
+END
+
+IF
 GlobalGT("Chapter","Global",6)
 OR(16)
 AreaCheck("BG4801")
@@ -170,7 +182,7 @@ SetGlobal("EECorIrThr","LOCALS",1)
 END
 
 IF
-OR(16)
+OR(17)
 Global("EEOwnHouse","Locals",1)
 Global("EEMetRohma","Global",2)
 Global("EECorDpl","BG0603",1)
@@ -187,6 +199,7 @@ Global("EECorUnderc","BG0112",1)
 Global("EECorThNotYet","BG1200",1)
 Global("EECorMoreTaskSC","bg1100",1)
 Global("EECorIrThr","LOCALS",1)
+Global("EEBendalCorw2","Global",2)
 InParty(Myself)
 !See([ENEMY])
 CombatCounter(0)

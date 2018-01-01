@@ -57,3 +57,13 @@ I_C_T2 Bendal 3 EEBendalCorw3
 I_C_T2 Bendal 4 EEBendalCorw4
 ==BDCorwiJ IF~InParty("Corwin")~THEN~Am I the only one to think that Koveras sounds like Sarevok spelled backwards.~
 ==BDCorwiJ IF~InParty("Corwin")~THEN~We must be careful here, <CHARNAME>, we have not the authority of the Flaming Fist behind us while we're here. Let's try to gain evidence but not confront him here. That must wait until we can face him in Baldur's Gate. Restraint is the order of the day.~END
+
+I_C_T Rielta 0 EECorRieltCandl
+==Rielta IF~InParty("Corwin")~THEN~You there, Flaming Fist, do your duty and remove this scum from our sight, will you.~
+==BDCorwiJ IF~InParty("Corwin")~THEN~The Fist is not in the service of the Iron Throne, Rielta Anchev. In fact my presence here is based on the fact that your involvement with that Iron Crisis will come to an end.~
+==Rielta IF~InParty("Corwin")~THEN~Captain, have you missed something? Your superior Angelo Dorsan will be most likely willing to set your loyalties right, or are you a deserter to go down with those criminals?~
+==BDCorwiJ IF~InParty("Corwin")~THEN~Dosrsan, my superior? You must be joking, you can't bribe Scar or Eltan or me to jump to your tune, Anchev. I know where my duties are, surely not serving the Iron Throne against the town I swore to protect.~
+==Rielta IF~InParty("Corwin")~THEN~You'll soon see the errors of your stubborn position, Captain. I'd rather hear what <CHARNAME> has to answer.~END
+
+ADD_TRANS_ACTION Shista BEGIN 0 END BEGIN 0 1 2 END
+~SetGlobal("EECorwShista","BG2611",1)~
