@@ -22,6 +22,8 @@ EXTEND_TOP ~BG0900.bcs~ ~CorwinEET/Baf/BG0900.baf~
 EXTEND_TOP ~bg0224.bcs~ ~CorwinEET/Baf/bg0224beno.baf~
 EXTEND_TOP ~bd1000.bcs~ ~CorwinEET/Baf/BD1000move.baf~
 
+COMPILE ~CorwinEET/Baf/CAPCUTEE.BAF~
+
 COPY_EXISTING ~bd1000.are~ ~override~
               WRITE_ASCII 0x36bc ~rabbit01~
 
