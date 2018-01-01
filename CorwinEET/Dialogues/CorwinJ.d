@@ -546,4 +546,4 @@ IF~~THEN BDCorwiJ EECorwPrison3
 
 CHAIN
 IF~~THEN BDCorwiJ EECorwPrison4
-~You, the bhaalspawn criminal, is the best option Baldur's Gate has at this moment. For my hometown, I will not stand aside idle, we must go on together.~DO~SetGlobal("EECorwPrison","BG0607",2) StartCutSceneMode() Wait(2) StartCutScene("Capcut02")~EXIT
+~You, the bhaalspawn criminal, you are the best option Baldur's Gate has at this moment. For my hometown, I will not stand aside idle, we must go on together.~DO~SetGlobal("EECorwPrison","BG0607",2) StartCutSceneMode() Wait(2) StartCutScene("Capcut02")~EXIT

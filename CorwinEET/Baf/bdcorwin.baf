@@ -182,7 +182,7 @@ SetGlobal("EECorIrThr","LOCALS",1)
 END
 
 IF
-OR(18)
+OR(17)
 Global("EEOwnHouse","Locals",1)
 Global("EEMetRohma","Global",2)
 Global("EECorDpl","BG0603",1)
@@ -200,7 +200,6 @@ Global("EECorThNotYet","BG1200",1)
 Global("EECorMoreTaskSC","bg1100",1)
 Global("EECorIrThr","LOCALS",1)
 Global("EEBendalCorw2","Global",2)
-Global("EECorwPrison","BG0607",1)
 InParty(Myself)
 !See([ENEMY])
 CombatCounter(0)
@@ -209,6 +208,13 @@ See(Player1)
 THEN
 RESPONSE #100
 StartDialogNoSet(Player1)
+END
+
+IF
+Global("EECorwPrison","BG0607",1)
+THEN
+RESPONSE #100
+Dialogue("Corwin")
 END
 
 IF
