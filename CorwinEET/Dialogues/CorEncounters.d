@@ -67,3 +67,26 @@ I_C_T Rielta 0 EECorRieltCandl
 
 ADD_TRANS_ACTION Shista BEGIN 0 END BEGIN 0 1 2 END
 ~SetGlobal("EECorwShista","BG2611",1)~
+
+INTERJECT HUSAM2 0 EECorHussCha7
+==Husam2 IF~InParty("Corwin")~THEN~Captain lady, you be one offa few can still turn things 'round *hic*.-~
+==BDCorwiJ IF~InParty("Corwin")~THEN~I fear the worst after what we heard at Candlekeep. What do you have for us, man?~
+==Husam2 IF~InParty("Corwin")~THEN~Well, heh heh, quites a bit I have, quites a bit. Does ya know about Duke Eltan, he's diseased heez is. His seconds in command *hic* Scar got killed, assassassinated heez was. *buuuuuurp* Sose that's it. I gots to get going now, if you wants to talk with me some more just come by the Blushing Mermaid. See yas.~DO~SetGlobal("HusamMove","GLOBAL",5) EscapeArea()~
+==BDCorwiJ IF~InParty("Corwin")~THEN~Scar dead? That can't be...Eltan diseased, probably poisoned. <CHARNAME>, we must find out what's going on before we face Sarevok. That guy knows a lot.~ 
+==BDCorwiJ IF~InParty("Corwin")~THEN~All this talk about Angelo Dorsan, remember. If that scoundrel is now in charge of the Flaming Fist, we need to beware, not many may still be loyal to our true course, the majority may follow Dorsan in their duty while not knowing the truth.~
+END
+++~What do you propose, Corwin?~ EXTERN BDCorwiJ EECorHussCha7b
+++~Bah, a drunken fool's babbling, we can't waste time, we need to track down Sarevok.~EXTERN BDCorwiJ EECorHussCha7c
+++~As a minimum we may hear him out at the Blushing Mermaid.~EXTERN BDCorwiJ EECorHussCha7b
+++~We should immediately go to Flaming Fist headquarter to find out what's going on.~EXTERN BDCorwiJ EECorHussCha7b
+
+CHAIN
+IF~~THEN BDCorwiJ EECorHussCha7b
+~Let us first go to the Blushing Mermaid to find out more before we investigate the Flaming Fist headquarter. We need to avoid another trap if there is one.~EXIT
+
+CHAIN
+IF~~THEN BDCorwiJ EECorHussCha7c
+~Truth comes from the mouth of fools and drunkards more often than you think.~EXTERN BDCorwiJ EECorHussCha7b
+
+ADD_TRANS_ACTION Neb_ BEGIN 5 END BEGIN 0 END
+~SetGlobal("EECorwPrison","BG0607",1)~

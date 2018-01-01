@@ -527,3 +527,23 @@ END
 CHAIN
 IF~~THEN BDCorwiJ CorInShista2
 ~(She attempts a smile that ends up as a grin.) I have started to trust you, <CHARNAME>. Sometimes I trust you more than of my comrades in the Fist by now. There is something foul in our ranks just like it is with people in this place.~EXIT
+
+CHAIN
+IF~Global("EECorwPrison","BG0607",1)~THEN BDCorwiJ EECorwPrison1
+~<CHARNAME>, leave this *true* murderer alone, we need no scum like this. Remember I'm still a member of the REAL Flaming Fist, not that Angelo troupe.~
+=~This is MY headquarter and I get us out here while this gnome stays inside.~
+END
+++~No, Captain, I cannot allow you to get involved deeper with our misdeeds and compromise yourself...~+ EECorwPrison2
+++~Corwin, of course, how could I forget. You know every inch of this building.~+ EECorwPrison3
+
+CHAIN
+IF~~THEN BDCorwiJ EECorwPrison2
+~Oh, shut up.~EXTERN BDCorwiJ EECorwPrison4 
+
+CHAIN
+IF~~THEN BDCorwiJ EECorwPrison3
+~Indeed there is a way out here unknown to Angelo and I have one of the keys for it.~EXTERN BDCorwiJ EECorwPrison4
+
+CHAIN
+IF~~THEN BDCorwiJ EECorwPrison4
+~You, the bhaalspawn criminal, is the best option Baldur's Gate has at this moment. For my hometown, I will not stand aside idle, we must go on together.~DO~SetGlobal("EECorwPrison","BG0607",2) StartCutSceneMode() Wait(2) StartCutScene("Capcut02")~EXIT
