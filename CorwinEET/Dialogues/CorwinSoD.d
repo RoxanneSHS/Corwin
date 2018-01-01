@@ -53,3 +53,8 @@ IF~~THEN REPLY ~You were part of it, Corwin. Forget me, I'm still the same. Tell
 END
 
 END
+
+CHAIN
+IF WEIGHT #-7~Global("bd_plot","global",591) GlobalGT("EERescEltan","Locals",1)~THEN BDCorwin Skiefound
+~You risked your life for Duke Eltan when he was dying...your feelings about Lanie you shared with me...all of that IS TRUE - this here isn't. Tell me it isn't, I will believe you.~EXTERN BDCorwin 52
+

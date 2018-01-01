@@ -547,3 +547,11 @@ IF~~THEN BDCorwiJ EECorwPrison3
 CHAIN
 IF~~THEN BDCorwiJ EECorwPrison4
 ~You, the bhaalspawn criminal, you are the best option Baldur's Gate has at this moment. For my hometown, I will not stand aside idle, we must go on together.~DO~SetGlobal("EECorwPrison","BG0607",2) StartCutSceneMode() Wait(2) StartCutScene("Capcut02")~EXIT
+
+CHAIN
+IF~Global("EERescEltan","Locals",1)~THEN BDCorwiJ CorEltanResc1
+~(Corwin has put her hand on your arm and stops you to turn to her.)~
+DO~SetGlobal("EERescEltan","Locals",2)~
+=~<CHARNAME>, whatever they say about you and whatever will happen...these deeds you now do for the Duke, for Baldur's Gate, ah, do I sound melodramatic already? Ehem, what I wanted to say is like, you do it for me as well. And if nobody will thank you for it and even if we fail...~
+=~Thank you.~
+=~(She has turned and walks ahead without waiting for your answer and all you can do is follow her.)~EXIT

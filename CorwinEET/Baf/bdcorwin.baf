@@ -182,7 +182,16 @@ SetGlobal("EECorIrThr","LOCALS",1)
 END
 
 IF
-OR(17)
+Global("Chapter","Global",7)
+Global("EERescEltan","Locals",0)
+PartyHasItem("Misc55")
+THEN
+RESPONSE #100
+SetGlobal("EERescEltan","Locals",1)
+END
+
+IF
+OR(18)
 Global("EEOwnHouse","Locals",1)
 Global("EEMetRohma","Global",2)
 Global("EECorDpl","BG0603",1)
@@ -200,6 +209,7 @@ Global("EECorThNotYet","BG1200",1)
 Global("EECorMoreTaskSC","bg1100",1)
 Global("EECorIrThr","LOCALS",1)
 Global("EEBendalCorw2","Global",2)
+Global("EERescEltan","Locals",1)
 InParty(Myself)
 !See([ENEMY])
 CombatCounter(0)

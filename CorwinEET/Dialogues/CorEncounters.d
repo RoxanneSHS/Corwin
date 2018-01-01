@@ -100,3 +100,7 @@ I_C_T2 Sorrel 3 EESorrelCorw2
 ==BDCorwiJ IF~InParty("Corwin")~THEN~Sorrel, nothing is lost as long as the remaining comrades who are not corrupted by Angelo stand together. You know who's on our side, go spread the news that <CHARNAME> is our hope at this moment to help me solve this crisis.~
 ==Sorrel IF~InParty("Corwin")~THEN~That I will, Captain. Anyway, it's best you and your party stay out of sight as best as possible. The sewers are a safe way to move about. Good luck, Captain Corwin.~
 ==BDCorwiJ IF~InParty("Corwin")~THEN~Be assured we will persist and rebuild the Flaming Fist when this is over. We will not forget those who stayed loyal, Sorrel.~END
+
+I_C_T Harbor 9 EECorwRescEltanHarb
+==BDCorwiJ IF~InParty("Corwin") ~THEN~You know what must be done to save his life while we chase the ones who did this and are out to do even worse. ~DO~SetGlobal("EERescEltan","Locals",3)~
+==Harbor IF~InParty("Corwin") ~THEN~He'll be at the safest place this town has these days and in the best of care, worry not for him, Captain Corwin. All your effort now needs to be to stop Sarevok. We pray for you - and for <CHARNAME>.~END
