@@ -104,3 +104,9 @@ I_C_T2 Sorrel 3 EESorrelCorw2
 I_C_T Harbor 9 EECorwRescEltanHarb
 ==BDCorwiJ IF~InParty("Corwin") ~THEN~You know what must be done to save his life while we chase the ones who did this and are out to do even worse. ~DO~SetGlobal("EERescEltan","Locals",3)~
 ==Harbor IF~InParty("Corwin") ~THEN~He'll be at the safest place this town has these days and in the best of care, worry not for him, Captain Corwin. All your effort now needs to be to stop Sarevok. We pray for you - and for <CHARNAME>.~END
+
+I_C_T Sarevo 6 EECorwSarevDukes
+==BDCorwiJ IF~InParty("Corwin") ~THEN~Angelo is never leading the Flaming Fist and Duke Eltan is not dead.~
+==BDCorwiJ IF~InParty("Corwin") Global("EERescEltan","Locals",3)~THEN~<CHARNAME> and me have assured that Eltan is in safety and he will recover to take back responsibility of our forces.~ 
+==BDCorwiJ IF~InParty("Corwin") ~THEN~In the name of the Flaming Fist, Sarevok, you are under arrest.~
+==Sarevo IF~InParty("Corwin") ~THEN~Laughable, woman. I, Duke Sarevok, will put you under arrest and you will be disciplined by Angelo Dorsan together with the remaining scum you brought into this honorable assembly. Let us continue now.~END
