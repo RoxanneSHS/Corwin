@@ -15,4 +15,5 @@ InActiveArea("bdaudam")
 THEN
 RESPONSE #100
 Deactivate("bdaudam")
+Continue()
 END

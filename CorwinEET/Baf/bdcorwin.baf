@@ -191,7 +191,33 @@ SetGlobal("EERescEltan","Locals",1)
 END
 
 IF
-OR(18)
+Global("BD_SPEAKER_THREAT","BD0120",2)
+Global("EECorwAfter","BD0120",0)
+Delay(12)
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("EECorwAfter","BD0120",1)
+END
+
+
+IF
+AreaCheck("BD0120")
+OR(2)
+Dead("bdkorlas") 
+Global("BD_KORLASZ_SURRENDER","GLOBAL",1)
+GlobalLT("EECorwAfter","BD0120",3)
+Delay(12)
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("EECorwAfter","BD0120",3)
+END
+
+IF
+OR(20)
 Global("EEOwnHouse","Locals",1)
 Global("EEMetRohma","Global",2)
 Global("EECorDpl","BG0603",1)
@@ -210,6 +236,8 @@ Global("EECorMoreTaskSC","bg1100",1)
 Global("EECorIrThr","LOCALS",1)
 Global("EEBendalCorw2","Global",2)
 Global("EERescEltan","Locals",1)
+Global("EECorwAfter","BD0120",1)
+Global("EECorwAfter","BD0120",3)
 InParty(Myself)
 !See([ENEMY])
 CombatCounter(0)
