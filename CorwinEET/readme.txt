@@ -16,8 +16,9 @@ Features:
 - Not to forget that Corwin is a useful archer in BG1 and keeps her stat gains, XP, equipment etc when she joins you again in SoD.
 
 Due to the continuity provided for Corwin by this mod, it is for EET games only. 
+It is recommended to install also the SoD Banter Restoration mod http://www.shsforums.net/files/file/1175-sod-banter-restoration-for-eet/ to complement this mod with NPC to NPC banters.
 
 Mod by Roxanne based on the original Corwin NPC character of the BG SoD extension.
 
-Forum:
+Forum: http://www.shsforums.net/topic/59648-mod-corwin-npc-for-eet/#entry599290
 Contact: Send PM to Roxanne at SHSForums.net
