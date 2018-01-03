@@ -105,6 +105,19 @@ I_C_T Harbor 9 EECorwRescEltanHarb
 ==BDCorwiJ IF~InParty("Corwin") ~THEN~You know what must be done to save his life while we chase the ones who did this and are out to do even worse. ~DO~SetGlobal("EERescEltan","Locals",3)~
 ==Harbor IF~InParty("Corwin") ~THEN~He'll be at the safest place this town has these days and in the best of care, worry not for him, Captain Corwin. All your effort now needs to be to stop Sarevok. We pray for you - and for <CHARNAME>.~END
 
+INTERJECT Kent 0 EECorwNoDesert
+==BDCorwiJ IF~InParty("Corwin") ~THEN~Sergeant Kent, make your report.~
+==Kent IF~InParty("Corwin") ~THEN~Captain? I remember these people with you from when they worked for Scar and Eltan. Well, since you've been gone, things have gone downhill. Eltan's taken ill, and he's resting in the room beside us. His healer, Rashad, keeps on saying that there's nothing he can do, but I know better. He's no healer from what I've seen. Anyhow, it don't matter; I've decided to desert the Flaming Fist before things get too hairy. I don't want to lose my life over whatever power struggle is going on in the city.~
+==BDCorwiJ IF~InParty("Corwin") ~THEN~Sergeant Kent, I have not heard this last remark about deserting. Listen, man, our cause is not lost. We are here to save Eltan. You will go and report to Lieutenant Vai right away. She and Laola Axhand will regather all those who can still be trusted. The ursurper Dorsan will be removed pretty soon with his conveyor Sarevok.~
+==Kent IF~InParty("Corwin") ~THEN~Aye, Captain. Thank you, ma'am, I just didn't know that all you good people are still around. I know where to find Axhand.~
+==BDCorwiJ IF~InParty("Corwin") ~THEN~One final question, Kent. Where did they bring Scar's body, we may still be able to resurrect him?~
+==Kent IF~InParty("Corwin") ~THEN~I fear no, Captain. When they brought him to headquarter's, that scoundrel Dorsan claimed there was evidence that shadow thieves did it - but nobody saw it but him. His men took the body away in haste, Leira may know to where.~
+==SkieJ IF~InParty("Skie") ~THEN~This is terrible... We've got to do something, <CHARNAME>... We couldn't save my father... but we've got to try and save Eltan... I owe it... to my father..~
+==BDCorwiJ IF~InParty("Corwin") ~THEN~Scar is lost thanks to Angelo Dorsan, let's focus on saving Eltan at least. We still have that time before we need to deal with Sarevok.~
+END
+++~Thanks for the information, Kent. Maybe we'll see each other again.~+ 3
+++~Kent, why don't you think Rashad's a healer?~+4
+
 I_C_T Sarevo 6 EECorwSarevDukes
 ==BDCorwiJ IF~InParty("Corwin") ~THEN~Angelo is never leading the Flaming Fist and Duke Eltan is not dead.~
 ==BDCorwiJ IF~InParty("Corwin") Global("EERescEltan","Locals",3)~THEN~<CHARNAME> and me have assured that Eltan is in safety and he will recover to take back responsibility of our forces.~ 
