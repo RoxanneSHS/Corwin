@@ -201,6 +201,15 @@ RESPONSE #100
 SetGlobal("EECorwAfter","BD0120",1)
 END
 
+IF
+Global("Chapter","Global",10)
+GlobalGT("EERescEltan","Locals",1)
+Global("EECorwBelievePC","Global",0)
+InParty(Myself)
+THEN
+RESPONSE #100
+SetGlobal("EECorwBelievePC","Global",1)
+END
 
 IF
 AreaCheck("BD0120")
