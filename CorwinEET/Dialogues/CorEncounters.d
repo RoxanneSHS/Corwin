@@ -61,7 +61,7 @@ I_C_T2 Bendal 4 EEBendalCorw4
 I_C_T Rielta 0 EECorRieltCandl
 ==Rielta IF~InParty("Corwin")~THEN~You there, Flaming Fist, do your duty and remove this scum from our sight, will you.~
 ==BDCorwiJ IF~InParty("Corwin")~THEN~The Fist is not in the service of the Iron Throne, Rielta Anchev. In fact my presence here is based on the fact that your involvement with that Iron Crisis will come to an end.~
-==Rielta IF~InParty("Corwin")~THEN~Captain, have you missed something? Your superior Angelo Dorsan will be most likely willing to set your loyalties right, or are you a deserter to go down with those criminals?~
+==Rielta IF~InParty("Corwin")~THEN~Captain, have you missed something? Your superior Angelo Dosan will be most likely willing to set your loyalties right, or are you a deserter to go down with those criminals?~
 ==BDCorwiJ IF~InParty("Corwin")~THEN~Dosrsan, my superior? You must be joking, you can't bribe Scar or Eltan or me to jump to your tune, Anchev. I know where my duties are, surely not serving the Iron Throne against the town I swore to protect.~
 ==Rielta IF~InParty("Corwin")~THEN~You'll soon see the errors of your stubborn position, Captain. I'd rather hear what <CHARNAME> has to answer.~END
 
@@ -73,7 +73,7 @@ INTERJECT HUSAM2 0 EECorHussCha7
 ==BDCorwiJ IF~InParty("Corwin")~THEN~I fear the worst after what we heard at Candlekeep. What do you have for us, man?~
 ==Husam2 IF~InParty("Corwin")~THEN~Well, heh heh, quites a bit I have, quites a bit. Does ya know about Duke Eltan, he's diseased heez is. His seconds in command *hic* Scar got killed, assassassinated heez was. *buuuuuurp* Sose that's it. I gots to get going now, if you wants to talk with me some more just come by the Blushing Mermaid. See yas.~DO~SetGlobal("HusamMove","GLOBAL",5) EscapeArea()~
 ==BDCorwiJ IF~InParty("Corwin")~THEN~Scar dead? That can't be...Eltan diseased, probably poisoned. <CHARNAME>, we must find out what's going on before we face Sarevok. That guy knows a lot.~ 
-==BDCorwiJ IF~InParty("Corwin")~THEN~All this talk about Angelo Dorsan, remember. If that scoundrel is now in charge of the Flaming Fist, we need to beware, not many may still be loyal to our true course, the majority may follow Dorsan in their duty while not knowing the truth.~
+==BDCorwiJ IF~InParty("Corwin")~THEN~All this talk about Angelo Dosan, remember. If that scoundrel is now in charge of the Flaming Fist, we need to beware, not many may still be loyal to our true course, the majority may follow Dosan in their duty while not knowing the truth.~
 END
 ++~What do you propose, Corwin?~ EXTERN BDCorwiJ EECorHussCha7b
 ++~Bah, a drunken fool's babbling, we can't waste time, we need to track down Sarevok.~EXTERN BDCorwiJ EECorHussCha7c
@@ -108,12 +108,12 @@ I_C_T Harbor 9 EECorwRescEltanHarb
 INTERJECT Kent 0 EECorwNoDesert
 ==BDCorwiJ IF~InParty("Corwin") ~THEN~Sergeant Kent, make your report.~
 ==Kent IF~InParty("Corwin") ~THEN~Captain? I remember these people with you from when they worked for Scar and Eltan. Well, since you've been gone, things have gone downhill. Eltan's taken ill, and he's resting in the room beside us. His healer, Rashad, keeps on saying that there's nothing he can do, but I know better. He's no healer from what I've seen. Anyhow, it don't matter; I've decided to desert the Flaming Fist before things get too hairy. I don't want to lose my life over whatever power struggle is going on in the city.~
-==BDCorwiJ IF~InParty("Corwin") ~THEN~Sergeant Kent, I have not heard this last remark about deserting. Listen, man, our cause is not lost. We are here to save Eltan. You will go and report to Lieutenant Vai right away. She and Laola Axhand will regather all those who can still be trusted. The ursurper Dorsan will be removed pretty soon with his conveyor Sarevok.~
+==BDCorwiJ IF~InParty("Corwin") ~THEN~Sergeant Kent, I have not heard this last remark about deserting. Listen, man, our cause is not lost. We are here to save Eltan. You will go and report to Lieutenant Vai right away. She and Laola Axhand will regather all those who can still be trusted. The ursurper Dosan will be removed pretty soon with his conveyor Sarevok.~
 ==Kent IF~InParty("Corwin") ~THEN~Aye, Captain. Thank you, ma'am, I just didn't know that all you good people are still around. I know where to find Axhand.~
 ==BDCorwiJ IF~InParty("Corwin") ~THEN~One final question, Kent. Where did they bring Scar's body, we may still be able to resurrect him?~
-==Kent IF~InParty("Corwin") ~THEN~I fear no, Captain. When they brought him to headquarter's, that scoundrel Dorsan claimed there was evidence that shadow thieves did it - but nobody saw it but him. His men took the body away in haste, Leira may know to where.~
+==Kent IF~InParty("Corwin") ~THEN~I fear no, Captain. When they brought him to headquarter's, that scoundrel Dosan claimed there was evidence that shadow thieves did it - but nobody saw it but him. His men took the body away in haste, Leira may know to where.~
 ==SkieJ IF~InParty("Skie") ~THEN~This is terrible... We've got to do something, <CHARNAME>... We couldn't save my father... but we've got to try and save Eltan... I owe it... to my father..~
-==BDCorwiJ IF~InParty("Corwin") ~THEN~Scar is lost thanks to Angelo Dorsan, let's focus on saving Eltan at least. We still have that time before we need to deal with Sarevok.~
+==BDCorwiJ IF~InParty("Corwin") ~THEN~Scar is lost thanks to Angelo Dosan, let's focus on saving Eltan at least. We still have that time before we need to deal with Sarevok.~
 END
 ++~Thanks for the information, Kent. Maybe we'll see each other again.~+ 3
 ++~Kent, why don't you think Rashad's a healer?~+4
@@ -122,4 +122,4 @@ I_C_T Sarevo 6 EECorwSarevDukes
 ==BDCorwiJ IF~InParty("Corwin") ~THEN~Angelo is never leading the Flaming Fist and Duke Eltan is not dead.~
 ==BDCorwiJ IF~InParty("Corwin") Global("EERescEltan","Locals",3)~THEN~<CHARNAME> and me have assured that Eltan is in safety and he will recover to take back responsibility of our forces.~ 
 ==BDCorwiJ IF~InParty("Corwin") ~THEN~In the name of the Flaming Fist, Sarevok, you are under arrest.~
-==Sarevo IF~InParty("Corwin") ~THEN~Laughable, woman. I, Duke Sarevok, will put you under arrest and you will be disciplined by Angelo Dorsan together with the remaining scum you brought into this honorable assembly. Let us continue now.~END
+==Sarevo IF~InParty("Corwin") ~THEN~Laughable, woman. I, Duke Sarevok, will put you under arrest and you will be disciplined by Angelo Dosan together with the remaining scum you brought into this honorable assembly. Let us continue now.~END

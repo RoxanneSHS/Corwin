@@ -276,7 +276,7 @@ APPEND BDCorwiJ
 IF~ Global("bd_drinks_corwin","global",1)~ THEN BEGIN nw124 
   SAY ~So. <CHARNAME>. The <PRO_MANWOMAN>. The myth. The hero of the Sword Coast. Tell me about yourself.~ 
 IF ~~ THEN REPLY ~I'd rather know about you.~ DO ~SetGlobal("bd_drinks_corwin","global",2)~ GOTO nw125
-IF ~~ THEN REPLY ~Gods, we don't have nearly enough time for that. Forget me. Tell me about Angelo Dorsan.~ DO ~SetGlobal("bd_drinks_corwin","global",2)~ GOTO nw133
+IF ~~ THEN REPLY ~Gods, we don't have nearly enough time for that. Forget me. Tell me about Angelo Dosan.~ DO ~SetGlobal("bd_drinks_corwin","global",2)~ GOTO nw133
 IF ~~ THEN REPLY ~Everything you've heard about me? Absolutely true.~ DO ~SetGlobal("bd_drinks_corwin","global",2)
 ~ GOTO nw137
 IF ~~ THEN REPLY ~I don't talk about my past.~ DO ~SetGlobal("bd_drinks_corwin","global",2)~ GOTO nw142
@@ -285,13 +285,13 @@ END
 IF ~~ THEN BEGIN nw125 
 SAY ~What would you like to know?~ [BD35075]
 IF ~~ THEN REPLY ~How did you come to join the Flaming Fist?~ GOTO nw128
-IF ~~ THEN REPLY ~What's your sense of this Angelo Dorsan?~ GOTO nw133
+IF ~~ THEN REPLY ~What's your sense of this Angelo Dosan?~ GOTO nw133
 IF ~~ THEN REPLY ~Where you're planning to sleep tonight.~ GOTO nw126
 END
 
 IF ~~ THEN BEGIN nw126 
 SAY ~Sleeping isn't on my agenda. Once I'm finished with you, I'll be spending what time I've got left preparing for the upcoming events.~ 
-IF ~~ THEN REPLY ~There's much to do before we leave. Tell me, what are your thoughts on Angelo Dorsan?~ GOTO nw133
+IF ~~ THEN REPLY ~There's much to do before we leave. Tell me, what are your thoughts on Angelo Dosan?~ GOTO nw133
 IF ~~ THEN REPLY ~You and the rest of the Flaming Fist. Tell me, how did you come to join Duke Eltan's ranks?~  GOTO nw128
 IF ~~ THEN REPLY ~If you need a break from the drudgery, you're welcome to come and not sleep in my chambers, if you know what I mean...~GOTO nw127
 IF ~~ THEN REPLY~Let's not waste more time than necessary here, then.~ GOTO nw132
@@ -299,14 +299,14 @@ END
 
 IF ~~ THEN BEGIN nw127 
 SAY ~It's best relationships in the Flaming Fist remain professional.~ [BD35084] 
-IF ~~ THEN REPLY ~Indeed. So what do you make of Angelo Dorsan?~ GOTO nw133
+IF ~~ THEN REPLY ~Indeed. So what do you make of Angelo Dosan?~ GOTO nw133
 IF ~~ THEN REPLY ~If you insist. How did you come to join the Fist, anyway?~ GOTO nw128
 IF ~~ THEN REPLY ~I'm not in the Fist. But I take your meaning - we'd best call it a night.~ GOTO nw132
 END
 
 IF ~~ THEN BEGIN nw128 
 SAY ~Ah, well, therein lies a tale, but it's a long one. My father, Audamar, was a Fist. You could say I followed in his footsteps.~ [BD35090] 
-IF ~~ THEN REPLY ~Many children emulate their parents. Not me, thankfully. Say, what are your thoughts on Angelo Dorsan?~ GOTO nw133
+IF ~~ THEN REPLY ~Many children emulate their parents. Not me, thankfully. Say, what are your thoughts on Angelo Dosan?~ GOTO nw133
 IF ~~ THEN REPLY~That's a curious way of putting things. You obviously followed in his footsteps since you enlisted.~ GOTO nw129
 IF ~~ THEN REPLY ~As you wish.~GOTO nw132
 END
@@ -315,14 +315,14 @@ IF ~~ THEN BEGIN nw129
 SAY ~I did, eventually. But it took me a long time to recognize the value in my father's example. When I was younger, I ran a bit wild. It took a lot of strength and patience on my father's part to set me on the right path. Things would have been much different for me if he were a lesser man.~ [BD35094] 
 IF ~~ THEN REPLY ~Sounds like Duke Entar could take a lesson from your father.~ GOTO nw130
 IF ~~ THEN REPLY ~A wild child, hm? Any stories you care to share?~ GOTO nw131
-IF ~~ THEN REPLY ~It's good to have people you can trust in your life. What are your thoughts on Angelo Dorsan?~ GOTO nw133
+IF ~~ THEN REPLY ~It's good to have people you can trust in your life. What are your thoughts on Angelo Dosan?~ GOTO nw133
 IF ~~ THEN REPLY ~Interesting. Well, we'd best call it a night.~ GOTO nw132
 END
 
 IF ~~ THEN BEGIN nw130 
 SAY ~I wasn't so different from Skie Silvershield when I was her age - thought I deserved everything and didn't understand why I couldn't have it. With a little help from Tymora, she'll learn some lessons and grow into a good and decent person.~ [BD61800]
-IF ~~ THEN REPLY ~Time will tell. What are your thoughts on Angelo Dorsan?~ GOTO nw133
-IF ~~ THEN REPLY ~I'm not as confident as you are, but stranger things have happened. What do you think of Angelo Dorsan thus far?~ GOTO nw133
+IF ~~ THEN REPLY ~Time will tell. What are your thoughts on Angelo Dosan?~ GOTO nw133
+IF ~~ THEN REPLY ~I'm not as confident as you are, but stranger things have happened. What do you think of Angelo Dosan thus far?~ GOTO nw133
 IF ~~ THEN REPLY ~We can only hope. Well, we'd best call it a night.~ GOTO nw132
 END
 
@@ -352,7 +352,7 @@ END
 IF ~~ THEN BEGIN nw137
 SAY ~ALL of it? Impressive...~ [BD35134] 
 IF ~~ THEN REPLY ~Well, maybe not all of it.~ GOTO nw138
-IF ~~ THEN REPLY ~You have no idea. Now tell me what you know about Angelo Dorsan.~ GOTO nw133
+IF ~~ THEN REPLY ~You have no idea. Now tell me what you know about Angelo Dosan.~ GOTO nw133
 IF ~~ THEN REPLY ~Now it's your turn to impress me. Tell me about yourself. How did you come to join the Flaming Fist?~ GOTO nw128
 IF ~~ THEN REPLY ~I'll leave you with that thought, Captain Corwin. We should turn in for the night.~ GOTO nw132
 END
@@ -376,7 +376,7 @@ END
 
 IF ~~ THEN BEGIN nw141 
 SAY ~After the iron crisis, the city adores you. That kind of deference would go to some peoples' heads. But not yours, it seems. That's good. We'll need level heads when it comes time to face the Iron Throne.~
-IF ~~ THEN REPLY ~I'll do my best to live up to your expectations. Speaking of the Iron Throne, what do you think of Angelo Dorsan?~ GOTO nw133
+IF ~~ THEN REPLY ~I'll do my best to live up to your expectations. Speaking of the Iron Throne, what do you think of Angelo Dosan?~ GOTO nw133
 IF ~~ THEN REPLY ~I'll keep mine as level as I can. Tell me about yourself now, Captain. How did you come to join the Flaming Fist?~ GOTO nw128
 IF ~~ THEN REPLY ~Mine will be more level after a good night's sleep. We should turn in.~ GOTO nw132
 END
@@ -409,7 +409,7 @@ IF ~~ THEN BDCorwiJ nw133
 ~A charismatic but sleazy guy. I'm loyal to the Flaming Fist but I doubt that he is. He is supported by someone and rose pretty quick in the ranks. ~ 
 ==SHARTJ IF~InParty("SHARTEEL")~ THEN~ Ah, the maggot, the scumbag - that's how the *great hero* ends, a bloody traitor.~
 ==BDCorwiJ IF~InParty("SHARTEEL")~ THEN~ You must know him even better than I do, Shar-Teel.~
-==SHARTJ IF~InParty("SHARTEEL")~ THEN~That scoundrel who copulated with that whore who called herself my mother...I have no evidence, I just know this fool too well. This Iron Throne complot is just the kind of thing he would fall for, the prospect of easy money and power and such - the whole package of pathetic male idiocy that attracts leeches like Angelo Dorsan.~
+==SHARTJ IF~InParty("SHARTEEL")~ THEN~That scoundrel who copulated with that whore who called herself my mother...I have no evidence, I just know this fool too well. This Iron Throne complot is just the kind of thing he would fall for, the prospect of easy money and power and such - the whole package of pathetic male idiocy that attracts leeches like Angelo Dosan.~
 ==BDCorwiJ IF~InParty("SHARTEEL")~ THEN~ You are his daughter? Poor girl, it explains quite a bit of how you became.~
 END
 IF ~~ THEN REPLY~You mistrust your own superiors, Captain?~GOTO nw134
