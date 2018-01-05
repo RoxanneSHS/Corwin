@@ -25,7 +25,11 @@ EXTEND_TOP ~bd1000.bcs~ ~CorwinEET/Baf/BD1000move.baf~
 COMPILE ~CorwinEET/Baf/CAPCUTEE.BAF~
 
 COPY_EXISTING ~bd1000.are~ ~override~
-              WRITE_ASCII 0x36bc ~rabbit01~
+LPF ALTER_AREA_ACTOR
+STR_VAR 
+actor_name= Corwin
+cre_file= rabbit01
+END
 
 COPY_EXISTING ~begbax_c.cre~ ~override~
               WRITE_ASCII 0x280 ~begbax_c~
