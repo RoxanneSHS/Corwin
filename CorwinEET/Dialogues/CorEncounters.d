@@ -116,7 +116,11 @@ INTERJECT Kent 0 EECorwNoDesert
 ==BDCorwiJ IF~InParty("Corwin") ~THEN~Scar is lost thanks to Angelo Dosan, let's focus on saving Eltan at least. We still have that time before we need to deal with Sarevok.~
 END
 ++~Thanks for the information, Kent. Maybe we'll see each other again.~+ 3
-++~Kent, why don't you think Rashad's a healer?~+4
+++~Kent, why don't you think Rashad's a healer?~ EXTERN Kent E4
+
+CHAIN
+IF~~THEN Kent E4
+~I followed him one night, all the way into the sewers. There he went into the Undercellar. Why would a healer be found in a whorehouse? I don't know what he was doing there, but it wasn't good, whatever it was. I have to get going, we must get the remaining loyals organised just like the Captain ordered. Perhaps we'll meet again.~DO~EscapeArea()~EXIT
 
 I_C_T Sarevo 6 EECorwSarevDukes
 ==BDCorwiJ IF~InParty("Corwin") ~THEN~Angelo is never leading the Flaming Fist and Duke Eltan is not dead.~
