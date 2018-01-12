@@ -92,7 +92,7 @@ ADD_TRANS_ACTION Neb_ BEGIN 5 END BEGIN 0 END
 ~SetGlobal("EECorwPrison","BG0607",1)~
 
 I_C_T2 Sorrel 2 EESorrelCorw1
-==BDCorwiJ IF~InParty("Corwin")~THEN~Sorrel, nothing is lost as long as the remaining comrades who are not corrupted by Angelo stand together. You know who's on our side, go spread the news that >CHARNAME> is our hope at this moment to help me solve this crisis.~
+==BDCorwiJ IF~InParty("Corwin")~THEN~Sorrel, nothing is lost as long as the remaining comrades who are not corrupted by Angelo stand together. You know who's on our side, go spread the news that <CHARNAME> is our hope at this moment to help me solve this crisis.~
 ==Sorrel IF~InParty("Corwin")~THEN~That I will, Captain. Anyway, it's best you and your party stay out of sight as best as possible. The sewers are a safe way to move about. Good luck, Captain Corwin.~
 ==BDCorwiJ IF~InParty("Corwin")~THEN~Be assured we will persist and rebuild the Flaming Fist when this is over. We will not forget those who stayed loyal, Sorrel.~END
 
