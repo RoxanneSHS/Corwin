@@ -256,3 +256,20 @@ IF ~~ THEN DO ~EscapeArea()
 ~ EXIT
 END
 END
+
+CHAIN
+IF WEIGHT #-3~Global("bd_sdd020_talk","global",1) Global("EECorwSarevDukes","Global",1)~THEN BDCorwiJ 241IfIn
+~A word, <CHARNAME>?~ [BD67132]
+DO~SetGlobal("bd_sdd020_talk","global",2)~
+END
+++~Of course, Captain Corwin. What can I do for you?~+ 244IfIn
+++~ANOTHER one? *sigh* Very well.~+ 244IfIn
+
+CHAIN
+IF~~THEN BDCorwiJ 244IfIn
+~Some of the things people are saying about you concern me.~
+=~I've seen you and I've seen Sarevok. But for others you are siblings and one of a breed.~
+END
+++~Like Sarevok, I am a child of Bhaal. But I assure you, a father is all we share.~+ 249
+++~Regrettably, that last is true. You can choose your friends, but not your family.~+ 249
+++~There are many who would to see me fall. Spread these vile lies and you'll do nothing but help them. Is that what you want?~+ 253
