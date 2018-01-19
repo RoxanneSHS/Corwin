@@ -124,7 +124,7 @@ DO~DestroyItem("EEAmul") LeaveParty() SetGlobal("EECorwinBG1","Global",1) Escape
 
 CHAIN
 IF WEIGHT #-3~Global("EECorwBelievePC","Global",1) AreaCheck("bd0104") Global("bd_jail_visitors","bd0104",2) ~THEN BDSCHAE2 Jailvisit
-~I don't believe in your guilt, <CHARNAME>, I had to come and tell you at least this~
+~I don't believe in your guilt, <CHARNAME>, I had to come and tell you at least this.~
 DO~SetGlobal("bd_jail_visitors","bd0104",6) SetGlobal("bd_visit_player","locals",1)~
 =~<CHARNAME>. How are you?~ [BD54610]
 END
