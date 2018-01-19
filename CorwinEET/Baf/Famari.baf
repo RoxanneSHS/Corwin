@@ -1,0 +1,10 @@
+IF
+AreaCheck("bd4000")
+InParty("corwin")
+OR(2)
+Dead("BDfamar1")
+Dead("BDfamar2")
+THEN
+RESPONSE #100
+DestroySelf()
+END

@@ -21,6 +21,7 @@ EXTEND_TOP ~bg1317.bcs~ ~CorwinEET/Baf/bg1317Rohma.baf~
 EXTEND_TOP ~BG0900.bcs~ ~CorwinEET/Baf/BG0900.baf~
 EXTEND_TOP ~bg0224.bcs~ ~CorwinEET/Baf/bg0224beno.baf~
 EXTEND_TOP ~bd1000.bcs~ ~CorwinEET/Baf/BD1000move.baf~
+EXTEND_TOP ~bdfamari.bcs~ ~CorwinEET/Baf/Famari.baf~
 
 COMPILE ~CorwinEET/Baf/CAPCUTEE.BAF~
 
