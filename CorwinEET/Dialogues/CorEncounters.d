@@ -62,7 +62,7 @@ I_C_T Rielta 0 EECorRieltCandl
 ==Rielta IF~InParty("Corwin")~THEN~You there, Flaming Fist, do your duty and remove this scum from our sight, will you.~
 ==BDCorwiJ IF~InParty("Corwin")~THEN~The Fist is not in the service of the Iron Throne, Rielta Anchev. In fact my presence here is based on the fact that your involvement with that Iron Crisis will come to an end.~
 ==Rielta IF~InParty("Corwin")~THEN~Captain, have you missed something? Your superior Angelo Dosan will be most likely willing to set your loyalties right, or are you a deserter to go down with those criminals?~
-==BDCorwiJ IF~InParty("Corwin")~THEN~Dossan, my superior? You must be joking, you can't bribe Scar or Eltan or me to jump to your tune, Anchev. I know where my duties are, surely not serving the Iron Throne against the town I swore to protect.~
+==BDCorwiJ IF~InParty("Corwin")~THEN~Dosan, my superior? You must be joking, you can't bribe Scar or Eltan or me to jump to your tune, Anchev. I know where my duties are, surely not serving the Iron Throne against the town I swore to protect.~
 ==Rielta IF~InParty("Corwin")~THEN~You'll soon see the errors of your stubborn position, Captain. I'd rather hear what <CHARNAME> has to answer.~END
 
 ADD_TRANS_ACTION Shista BEGIN 0 END BEGIN 0 1 2 END
