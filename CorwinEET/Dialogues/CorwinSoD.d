@@ -6,20 +6,20 @@ IF~Global("EECorwinBG1","Global",1)~THEN REPLY~I have missed your company, Schae
 END
 
 ADD_TRANS_TRIGGER BDSchael 2
-~Global("EECorwinBG1","Global",0)~
+~OR(2) Global("EECorwinBG1","Global",0) Global("EECorwinBG1","Global",61)~
 
 EXTEND_BOTTOM BDSchael 2
-IF ~Global("EECorwinBG1","Global",1)~ THEN REPLY ~I'll live. But Imoen requires aid.~ GOTO New6
-IF ~Global("EECorwinBG1","Global",1)~ THEN REPLY ~Worry about that later, Corwin. We've got to move, there may be more assassins about..~ GOTO New3
+IF ~OR(2) Global("EECorwinBG1","Global",1) Global("EECorwinBG1","Global",51)~ THEN REPLY ~I'll live. But Imoen requires aid.~ GOTO New6
+IF ~OR(2) Global("EECorwinBG1","Global",1) Global("EECorwinBG1","Global",51)~ THEN REPLY ~Worry about that later, Corwin. We've got to move, there may be more assassins about..~ GOTO New3
 END
 
 ADD_TRANS_TRIGGER BDBelt 40
-~Global("EECorwinBG1","Global",0)~
+~OR(2) Global("EECorwinBG1","Global",0) Global("EECorwinBG1","Global",61)~
 
 EXTEND_BOTTOM BDBelt 40
-IF ~Global("EECorwinBG1","Global",1)~ THEN REPLY ~Captain Corwin? I can think of no better companion.~ EXTERN BDSchael New22
-IF ~Global("EECorwinBG1","Global",1)~ THEN REPLY ~So we're headed to the nearest tavern, I presume? Just like we did before, fine with me.~ EXTERN BDSchael 20
-IF ~Global("EECorwinBG1","Global",1)~ THEN REPLY ~As I've already had one attempt on my life this night, I will permit it.~EXTERN BDSchael New21
+IF ~OR(2) Global("EECorwinBG1","Global",1) Global("EECorwinBG1","Global",51)~ THEN REPLY ~Captain Corwin? I can think of no better companion.~ EXTERN BDSchael New22
+IF ~OR(2) Global("EECorwinBG1","Global",1) Global("EECorwinBG1","Global",51)~ THEN REPLY ~So we're headed to the nearest tavern, I presume? Just like we did before, fine with me.~ EXTERN BDSchael 20
+IF ~OR(2) Global("EECorwinBG1","Global",1) Global("EECorwinBG1","Global",51)~ THEN REPLY ~As I've already had one attempt on my life this night, I will permit it.~EXTERN BDSchael New21
 END
 
 APPEND BDSchael
