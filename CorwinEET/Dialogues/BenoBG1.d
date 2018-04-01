@@ -3,11 +3,11 @@ IF WEIGHT #-2~InParty("corwin") See("corwin") Global("EECorBeno","bg0224",3)~THE
 ~Helm's steely eye... Schael? Is that you?~[BD52112]
 DO~SetGlobal("EECorBeno","bg0224",4)~
 ==BDCorwiJ~...Beno.~[BD52113]
-==BDFamari~I'm surprised, Schael. You were always so loyal to the Flaming Fist. What makes you turn up here at the entance of Undercellars. The Fist don't operate down here, or are you fighting your own war of justice by now?~
+==BDFamari~I'm surprised, Schael. You were always so loyal to the Flaming Fist. What makes you turn up here at the entrance of Undercellars. The Fist don't operate down here, or are you fighting your own war of justice by now?~
 ==BDCorwiJ~I accompany <CHARNAME> in <PRO_HISHER> tasks which are none of your business.~
 ==BDFamari~<CHARNAME>? This is...nice. The very one who operates against the Iron Throne.~
 END
-++~And you might be working for that organisation, I pressume?~+ BG2
+++~And you might be working for that organisation, I presume?~+ BG2
 ++~Corwin, I let you deal with him, you know him better, I suppose.~+ BG2
 ++~Are you just another of those unlucky bounty hunters that cross my path? You see me still standing, they*re dead - care to join them?~+ BG2
 
@@ -29,7 +29,7 @@ IF~~THEN BDFamari BG3
 
 CHAIN
 IF ~Global("EECorBeno","bg0224",5)~THEN BDCorwiJ BG4
-~So you know him now, (sigh). I killed him twice before to keep him off Rohma. He was ressurected by foul priests each time.~
+~So you know him now, (sigh). I killed him twice before to keep him off Rohma. He was resurrected by foul priests each time.~
 DO~SetGlobal("EECorBeno","bg0224",6)~
 END
 ++~You may get another chance soon if he's in league with our opponents.~+ BG5

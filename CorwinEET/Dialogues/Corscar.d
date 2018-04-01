@@ -9,9 +9,9 @@ ADD_TRANS_ACTION Aldeth BEGIN 27 END BEGIN 0 END ~ SetGlobal("EECorDpl","BG0128"
 I_C_T SCAR 7 EECorwinScar
 == SCAR IF ~AreaCheck("BG0900")  ~ THEN ~And..., <CHARNAME>, it may be a good idea to have someone at your side in those missions who knows a bit about this town and its subtleties.~
 == BDCorwin IF ~AreaCheck("BG0900") ~ THEN ~A bit, commander Scar?~
-== SCAR IF ~AreaCheck("BG0900")  ~ THEN ~Well, probably more than most of us, Captain, so much is sure. I like to introduce you to Captain Schael Corwin, my deputy and an officer I truely trust in these times like nobody else.~
+== SCAR IF ~AreaCheck("BG0900")  ~ THEN ~Well, probably more than most of us, Captain, so much is sure. I like to introduce you to Captain Schael Corwin, my deputy and an officer I truly trust in these times like nobody else.~
 == BDCorwin IF ~AreaCheck("BG0900") ~ THEN ~Thank you for the merits, commander.~
-== SCAR IF ~AreaCheck("BG0900") ~ THEN ~Captain Corwin has agreed to join you for the missions that await you in the town. She will follow your orders and assist you with her knowledge. I will leave you now to aquaint yourself and agree on a cooperation.~END
+== SCAR IF ~AreaCheck("BG0900") ~ THEN ~Captain Corwin has agreed to join you for the missions that await you in the town. She will follow your orders and assist you with her knowledge. I will leave you now to acquaint yourself and agree on a cooperation.~END
 
 APPEND BDCorwin
 
@@ -23,20 +23,20 @@ IF~~THEN REPLY~These are strange times, Captain Corwin, I have learned by now to
 END
 
 IF~~THEN BEGIN CanJoin2a
-SAY~I don't care for your glibberish motifs as long as you listen...~
+SAY~I don't care for your glib motifs as long as you listen...~
 IF~~THEN GOTO CanJoin2
 END
 
 IF~~THEN BEGIN CanJoin2
 SAY~It's not easy for me to admit it, but these are troubled times, and Commander Scar and me have reasonable suspicion that even within our own ranks we no longer can trust everybody in the way we need to.~
-=~I'm not referring to the Iron Crisis alone. There are greater things afoot. Duke Eltan trusts Scar and he trusts me. It was his proposal to seek the assistence of trustworthy and competent candidates who can venture where we cannot, officially.~
+=~I'm not referring to the Iron Crisis alone. There are greater things afoot. Duke Eltan trusts Scar and he trusts me. It was his proposal to seek the assistance of trustworthy and competent candidates who can venture where we cannot, officially.~
 IF~~THEN REPLY~Scar was right in two way. To trust us and to provide us with someone who has some background information of what's going on behind those walls over there.~GOTO CanJoin3
 IF~~THEN REPLY~I'm in a slightly similar situation, lady, I'm already deeply involved with whatever goes on here. Some assistance would be welcome.~GOTO CanJoin3
 IF~~THEN REPLY~I have my own reasons to pursue the issues of Baldur's Gate. The less people I hardly know are involved, the better.~GOTO CanJoin3
 END
 
 IF~~THEN BEGIN CanJoin3
-SAY~Listen, <CHARNAME>. My loyalty to my hometown and its people is my highest goal. For that purpose I joined the Flaming Fist and confide in Duke Eltan. Those who may be the threat to my town and people are most likely the same who are your enemies. Give me the chance to proof that to you. It will benefit both sides.~
+SAY~Listen, <CHARNAME>. My loyalty to my home town and its people is my highest goal. For that purpose I joined the Flaming Fist and confide in Duke Eltan. Those who may be the threat to my town and people are most likely the same who are your enemies. Give me the chance to proof that to you. It will benefit both sides.~
 IF~~THEN REPLY~Those are convincing arguments. Join with me, Captain Corwin.~GOTO CanJoiny
 IF~~THEN REPLY~I will try it with you, Corwin. I am not easily deceived, so be careful with how you act.~GOTO CanJoiny
 IF~~THEN REPLY~My party is full of trusted companions. I think, we can manage that situation without your help.~GOTO CanJoinn
@@ -73,8 +73,8 @@ END
 END
 
 I_C_T Angelo 0 EEAngeloCaught
-==Angelo IF~InParty("Corwin")~THEN~Ha, *Captain* Corwin, what a pleasure. You in that party makes you the traitor. I coudn't have plotted that any better than you do yourself.~
-==BDCorwiJ IF~InParty("Corwin")~THEN~The traitor Dorsan. Your reign here will be short. There are more loyal officers in Baldur's Gate than your limited scheming can silence.~
+==Angelo IF~InParty("Corwin")~THEN~Ha, *Captain* Corwin, what a pleasure. You in that party makes you the traitor. I couldn't have plotted that any better than you do yourself.~
+==BDCorwiJ IF~InParty("Corwin")~THEN~The traitor Dosan. Your reign here will be short. There are more loyal officers in Baldur's Gate than your limited scheming can silence.~
 ==Angelo IF~InParty("Corwin")~THEN~I can at least silence you. Guards! Shut up that noisy wench. I have wasted too much time already on the case of these wretched assassins.~DO~ActionOverride("Corwin",ApplyDamagePercent("Corwin",25,CRUSHING)) ~END
 
 CHAIN
@@ -82,7 +82,7 @@ IF WEIGHT #-3~GlobalGT("Chapter","GLOBAL",3) InParty("Corwin")~THEN Vai RetGate
 ~Schael! Eh, Captain Corwin, ma'am.~
 ==BDCorwiJ~Jessa, we're among friends here. But listen...~
 =~The official part, Lieutenant Vai, you have orders to return to Baldur's Gate and report back to commander Scar.~
-=~The friendly advice, Jessa, take care and keep your eyes open. There is tension inside the fist and we can't trust everybody blindly anymore. Politics take their toll.~
+=~The friendly advice, Jessa, take care and keep your eyes open. There is tension inside the fist and we can't trust everybody blindly any more. Politics take their toll.~
 ==Vai~So there's truth in the rumours we heard. Well, I trust you, Schael, and my own men, and Scar, Eltan, Laola Axhand and some more.~
 =~(She turns to you.)~EXTERN VAI 6
 

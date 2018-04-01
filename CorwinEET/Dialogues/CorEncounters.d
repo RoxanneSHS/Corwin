@@ -27,7 +27,7 @@ IF~OR(2)Global("X#KagainCaravan","GLOBAL",5)PartyHasItem("X#SILSH")~THEN REPLY~W
 INTERJECT Skie 1 EECorwinSkieBG1
 ==BDCorwiJ IF~InParty("Corwin") !InParty("Eldoth")~THEN~Hello, Skie...~
 ==Skie IF~InParty("Corwin") !InParty("Eldoth")~THEN~Oh, Schael, my father never lets me out much. If I could just join the Flaming Fist, I could be free just like you.~
-==BDCorwiJ IF~InParty("Corwin") !InParty("Eldoth")~THEN~Now...apart from the fact that your father probably never woould agree to it, there's something like discipline very high up in the Fist's rules, while free is...well, it's a dream anyway.~
+==BDCorwiJ IF~InParty("Corwin") !InParty("Eldoth")~THEN~Now...apart from the fact that your father probably never would agree to it, there's something like discipline very high up in the Fist's rules, while free is...well, it's a dream anyway.~
 ==Skie IF~InParty("Corwin") !InParty("Eldoth")~THEN~Ah, you just wait and see, I tell you, I'll grab my chance if I see it.~DO~EscapeAreaDestroy(30)~EXIT
 
 CHAIN
@@ -78,11 +78,11 @@ END
 ++~What do you propose, Corwin?~ EXTERN BDCorwiJ EECorHussCha7b
 ++~Bah, a drunken fool's babbling, we can't waste time, we need to track down Sarevok.~EXTERN BDCorwiJ EECorHussCha7c
 ++~As a minimum we may hear him out at the Blushing Mermaid.~EXTERN BDCorwiJ EECorHussCha7b
-++~We should immediately go to Flaming Fist headquarter to find out what's going on.~EXTERN BDCorwiJ EECorHussCha7b
+++~We should immediately go to Flaming Fist headquarters to find out what's going on.~EXTERN BDCorwiJ EECorHussCha7b
 
 CHAIN
 IF~~THEN BDCorwiJ EECorHussCha7b
-~Let us first go to the Blushing Mermaid to find out more before we investigate the Flaming Fist headquarter. We need to avoid another trap if there is one.~EXIT
+~Let us first go to the Blushing Mermaid to find out more before we investigate the Flaming Fist headquarters. We need to avoid another trap if there is one.~EXIT
 
 CHAIN
 IF~~THEN BDCorwiJ EECorHussCha7c
@@ -108,7 +108,7 @@ I_C_T Harbor 9 EECorwRescEltanHarb
 INTERJECT Kent 0 EECorwNoDesert
 ==BDCorwiJ IF~InParty("Corwin") ~THEN~Sergeant Kent, make your report.~
 ==Kent IF~InParty("Corwin") ~THEN~Captain? I remember these people with you from when they worked for Scar and Eltan. Well, since you've been gone, things have gone downhill. Eltan's taken ill, and he's resting in the room beside us. His healer, Rashad, keeps on saying that there's nothing he can do, but I know better. He's no healer from what I've seen. Anyhow, it don't matter; I've decided to desert the Flaming Fist before things get too hairy. I don't want to lose my life over whatever power struggle is going on in the city.~
-==BDCorwiJ IF~InParty("Corwin") ~THEN~Sergeant Kent, I have not heard this last remark about deserting. Listen, man, our cause is not lost. We are here to save Eltan. You will go and report to Lieutenant Vai right away. She and Laola Axhand will regather all those who can still be trusted. The ursurper Dosan will be removed pretty soon with his conveyor Sarevok.~
+==BDCorwiJ IF~InParty("Corwin") ~THEN~Sergeant Kent, I have not heard this last remark about deserting. Listen, man, our cause is not lost. We are here to save Eltan. You will go and report to Lieutenant Vai right away. She and Laola Axhand will regather all those who can still be trusted. The usurper Dosan will be removed pretty soon with his conveyor Sarevok.~
 ==Kent IF~InParty("Corwin") ~THEN~Aye, Captain. Thank you, ma'am, I just didn't know that all you good people are still around. I know where to find Axhand.~
 ==BDCorwiJ IF~InParty("Corwin") ~THEN~One final question, Kent. Where did they bring Scar's body, we may still be able to resurrect him?~
 ==Kent IF~InParty("Corwin") ~THEN~I fear no, Captain. When they brought him to headquarter's, that scoundrel Dosan claimed there was evidence that shadow thieves did it - but nobody saw it but him. His men took the body away in haste, Leira may know to where.~
@@ -120,10 +120,10 @@ END
 
 CHAIN
 IF~~THEN Kent E4
-~I followed him one night, all the way into the sewers. There he went into the Undercellar. Why would a healer be found in a whorehouse? I don't know what he was doing there, but it wasn't good, whatever it was. I have to get going, we must get the remaining loyals organised just like the Captain ordered. Perhaps we'll meet again.~DO~EscapeArea()~EXIT
+~I followed him one night, all the way into the sewers. There he went into the Undercellar. Why would a healer be found in a whorehouse? I don't know what he was doing there, but it wasn't good, whatever it was. I have to get going, we must get the remaining loyal ones organised just like the Captain ordered. Perhaps we'll meet again.~DO~EscapeArea()~EXIT
 
 I_C_T Sarevo 6 EECorwSarevDukes
 ==BDCorwiJ IF~InParty("Corwin") ~THEN~Angelo is never leading the Flaming Fist and Duke Eltan is not dead.~
 ==BDCorwiJ IF~InParty("Corwin") Global("EERescEltan","Locals",3)~THEN~<CHARNAME> and me have assured that Eltan is in safety and he will recover to take back responsibility of our forces.~ 
 ==BDCorwiJ IF~InParty("Corwin") ~THEN~In the name of the Flaming Fist, Sarevok, you are under arrest.~
-==Sarevo IF~InParty("Corwin") ~THEN~Laughable, woman. I, Duke Sarevok, will put you under arrest and you will be disciplined by Angelo Dosan together with the remaining scum you brought into this honorable assembly. Let us continue now.~END
+==Sarevo IF~InParty("Corwin") ~THEN~Laughable, woman. I, Duke Sarevok, will put you under arrest and you will be disciplined by Angelo Dosan together with the remaining scum you brought into this honourable assembly. Let us continue now.~END

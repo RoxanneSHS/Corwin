@@ -56,7 +56,7 @@ END
 
 CHAIN
 IF WEIGHT #-7~Global("bd_plot","global",591) GlobalGT("EERescEltan","Locals",1)~THEN BDCorwin Skiefound
-~You risked your life for Duke Eltan when he was dying...your feelings about Lanie you shared with me...all of that IS TRUE - this here isn't. Tell me it isn't, I will believe you.~EXTERN BDCorwin 52
+~You risked your life for Duke Eltan when he was dying...your feelings about Rohma you shared with me...all of that IS TRUE - this here isn't. Tell me it isn't, I will believe you.~EXTERN BDCorwin 52
 
 CHAIN
 IF~Global("EECorwAfter","BD0120",1)~THEN BDCorwiJ Korlasz1
@@ -70,8 +70,8 @@ END
 
 CHAIN
 IF~~THEN BDCorwiJ Korlasz2
-~What bothers me is that soon the people of Baldur's Gate will blame themself for having trusted the Bhaalspawn Sarevok and they will celebrate you, the winner, the hero, whatnot.~
-=~Public opinion is a fragile thing, <CHARNAME>. I love my hometown but I don't trust a mob that sees Sarevok's <PRO_BROTHERSISTER> in you. It may raise suspicion and rumour pretty soon.~
+~What bothers me is that soon the people of Baldur's Gate will blame themselves for having trusted the Bhaalspawn Sarevok and they will celebrate you, the winner, the hero, whatnot.~
+=~Public opinion is a fragile thing, <CHARNAME>. I love my home town but I don't trust a mob that sees Sarevok's <PRO_BROTHERSISTER> in you. It may raise suspicion and rumour pretty soon.~
 END
 IF~ReputationLT(Player1,10)~THEN REPLY~And what do you think, Corwin?~+ Korlasz4
 IF~ReputationGT(Player1,9)~THEN REPLY~And what do you think, Corwin?~+ Korlasz3
@@ -105,7 +105,7 @@ IF~~THEN BDCorwiJ Korlasz12f
 CHAIN
 IF~~THEN BDCorwiJ Korlasz13
 ~It's my duty to see how far Duke Eltan is restored by now. He needs all those officers who stayed loyal to clean the Flaming Fist of Angelo's remains and bring back the order to the city.~
-=~The Fist needs me now, my hometown needs me now...and Rohma needs me as well.~
+=~The Fist needs me now, my home town needs me now...and Rohma needs me as well.~
 END
 ++~I hope we will soon meet again, Corwin.~+ Korlasz14
 ++~I understand your motivation, Captain, I hope it's a temporary thing though.~+ Korlasz14

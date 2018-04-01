@@ -2,7 +2,7 @@ CHAIN
 IF WEIGHT #-5~InParty("Corwin")~THEN Alatos Alert
 ~Beware! Am I surrounded by nothing but fools! A Flaming Fist officer walks into here just like that.~
 ==BDCorwiJ~Oh, Thuibuld, stop the charade. I'm not the first nor the last of the Fist to be welcome here.~
-==Alatos~Ah, you're one on my payrole, lady, I should've known. I just can't know all of you personally, so sorry.~
+==Alatos~Ah, you're one on my payroll, lady, I should've known. I just can't know all of you personally, so sorry.~
 END
 ++~Corwin, nice attempt, but...~+ Alert2
 ++~Your messenger outside made it somehow urgent for us to see you.~EXTERN Alatos 0

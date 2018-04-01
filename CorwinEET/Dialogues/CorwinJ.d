@@ -45,7 +45,7 @@ END
 CHAIN
 IF~~THEN BDCorwiJ Home13
 ~Just one. Feels like more than that sometimes.~
-==BDRohma~I'm a handful. That's what Grampa says, anyway. His hands aren't that big, though. I'd say I'm at least... six handfuls. Six of his hands, I mean.~
+==BDRohma~I'm a handful. That's what Grandpa says, anyway. His hands aren't that big, though. I'd say I'm at least... six handfuls. Six of his hands, I mean.~
 END
 ++~I see...~EXTERN BDCorwiJ Home12
 
@@ -119,7 +119,7 @@ END
 
 CHAIN
 IF~~THEN BDCorwiJ Sardpl6
-~Most of them are despiteful but still acting somehow within the law. I suspect Sarevok Anchev to venture further than the rest.~
+~Most of them are spiteful but still acting somehow within the law. I suspect Sarevok Anchev to venture further than the rest.~
 END
 ++~That Sarevok we heard about, but who is he?~+ Sardpl4
 
@@ -137,7 +137,7 @@ IF~~THEN BDCorwiJ  woodl2
 END
 ++~(Grin) I do anything to entertain my troops and keep the spirit up.~+ woodl3
 ++~You're a city child and a family woman. Something rare in my experience. Not bad.~+ woodl3
-++~Inevitably our course will lead us back to your hometown sooner or later. So much is for sure.~+ woodl3
+++~Inevitably our course will lead us back to your home town sooner or later. So much is for sure.~+ woodl3
 
 CHAIN
 IF~~THEN BDCorwiJ  woodl3
@@ -151,20 +151,20 @@ DO~SetGlobal("EECorFriend","Locals",2)~
 END
 ++~And that's probably all you need to know about it, Captain.~+ Howcome2
 ++~This is a long story by now, Corwin, and most likely one to end with Sarevok.~+ Howcome3
-IF~CheckStatGT(Player1,11,INT)~THEN REPLY~Maybe telling all that has happened in such a short time to an unbiased listener helps both of us. We may both see clearer afterward. Looking back at it in context may make us all aware of details we could have missed.~+ Howcome3
+IF~CheckStatGT(Player1,11,INT)~THEN REPLY~Maybe telling all that has happened in such a short time to an unbiased listener helps both of us. We may both see clearer afterwards. Looking back at it in context may make us all aware of details we could have missed.~+ Howcome3
 
 CHAIN
 IF~~THEN BDCorwiJ Howcome2
-~Just as you like, <PRO_SIRMAAM>, I'm sure our comrads can answer this just as well as yourself.~DO~RealSetGlobalTimer("EECorBanT","Locals",2800)~
+~Just as you like, <PRO_SIRMAAM>, I'm sure our comrades can answer this just as well as yourself.~DO~RealSetGlobalTimer("EECorBanT","Locals",2800)~
 ==Bimoen IF~InParty("Imoen2")~THEN~Sure, Cory, I'll tell you things about <PRO_HIMHER> that <PRO_HESHE> might wish nobody knows, ha.~
-==BJAhei IF~InParty("Jaheira")~THEN~Ther's no reason to hide these things from a comrade. We may spend some time this evening, Captain, and I'll gladly answer your questions.~
+==BJAhei IF~InParty("Jaheira")~THEN~There's no reason to hide these things from a comrade. We may spend some time this evening, Captain, and I'll gladly answer your questions.~
 EXIT
 
 CHAIN
 IF~~THEN BDCorwiJ Howcome3
 ~I'm a pretty good listener and this story is one to interest me personally.~
 END
-++~It all started with my foster father Gorion notifying me one morning that we immediately had to leave our home at Candlekkep...(You tell her your story.)~DO~RealSetGlobalTimer("EECorBanT","Locals",2800)~+ Howcome4
+++~It all started with my foster father Gorion notifying me one morning that we immediately had to leave our home at Candlekeep...(You tell her your story.)~DO~RealSetGlobalTimer("EECorBanT","Locals",2800)~+ Howcome4
 
 CHAIN
 IF~~THEN BDCorwiJ Howcome4
@@ -181,7 +181,7 @@ END
 CHAIN
 IF~~THEN BDCorwiJ Friend11
 ~I want you to see past my appointment as local guide to your quest.~
-=~<CHARNAME>, I have to dedicate my attention to your cause - ah, to our cause, that is. I'm serving my hometown and the Fist, but for the moment I'm also your comrade just like <PLAYER2>, <PLAYER3>, <PLAYER4>, <PLAYER5>, and <PLAYER6>.~
+=~<CHARNAME>, I have to dedicate my attention to your cause - ah, to our cause, that is. I'm serving my home town and the Fist, but for the moment I'm also your comrade just like <PLAYER2>, <PLAYER3>, <PLAYER4>, <PLAYER5>, and <PLAYER6>.~
 END
 ++~Doesn't that put you into some dilemma, Corwin?~+ Friend12
 ++~I hope you set your priorities right, Captain, we may not always be able to act to your codex.~+ Friend12
@@ -199,7 +199,7 @@ DO~SetGlobal("EECorFriend","Locals",7)RealSetGlobalTimer("EECorBanT","Locals",37
 END
 ++~Your daughter, right. It can't be easy to be mother and Flaming Fist at the same time.~+ Friend21
 ++~Your private life is just that, Captain - private. Keep it that way.~DO~SetGlobal("EECorFriend","Locals",77)~+ Friend22
-++~Your father and your task being in your hometown give you a chance to be both, isn't it true?~+ Friend21
+++~Your father and your task being in your home town give you a chance to be both, isn't it true?~+ Friend21
 
 CHAIN
 IF~~THEN BDCorwiJ Friend22
@@ -337,7 +337,7 @@ IF ~~ THEN DO ~AddJournalEntry(@004,INFO) Face(NE)~ EXIT
 END
 
 IF ~~ THEN BEGIN nw134 
-SAY ~My loyalty is to my hometown and its people - not necessarily to each and every of its representatives. At this moment, <CHARNAME>, you may be the best option for a loyal officer serving Baldur's Gate.~
+SAY ~My loyalty is to my home town and its people - not necessarily to each and every of its representatives. At this moment, <CHARNAME>, you may be the best option for a loyal officer serving Baldur's Gate.~
 IF ~~ THEN REPLY~I won't disappoint you. I can promise you that.~ GOTO nw132
 IF ~~ THEN REPLY~I won't disappoint you. I can promise you that.. So how did you come to join the Flaming Fist anyway?~ GOTO nw128
 IF ~~ THEN REPLY ~We'll soon find out what the future holds. In the meantime, we should get some rest.~ GOTO nw132
@@ -407,7 +407,7 @@ END
 CHAIN
 IF ~~ THEN BDCorwiJ nw133 
 ~A charismatic but sleazy guy. I'm loyal to the Flaming Fist but I doubt that he is. He is supported by someone and rose pretty quick in the ranks. ~ 
-==SHARTJ IF~InParty("SHARTEEL")~ THEN~ Ah, the maggot, the scumbag - that's how the *great hero* ends, a bloody traitor.~
+==SHARTJ IF~InParty("SHARTEEL")~ THEN~ Ah, the maggot, the scum bag - that's how the *great hero* ends, a bloody traitor.~
 ==BDCorwiJ IF~InParty("SHARTEEL")~ THEN~ You must know him even better than I do, Shar-Teel.~
 ==SHARTJ IF~InParty("SHARTEEL")~ THEN~That scoundrel who copulated with that whore who called herself my mother...I have no evidence, I just know this fool too well. This Iron Throne complot is just the kind of thing he would fall for, the prospect of easy money and power and such - the whole package of pathetic male idiocy that attracts leeches like Angelo Dosan.~
 ==BDCorwiJ IF~InParty("SHARTEEL")~ THEN~ You are his daughter? Poor girl, it explains quite a bit of how you became.~
@@ -421,7 +421,7 @@ IF~Global("EECorUnderc","BG0112",1)~THEN BDCorwiJ Undercel1
 ~They don't even need to bribe the Flaming Fist to do their business down here.~
 DO~SetGlobal("EECorUnderc","BG0112",2)~
 END
-++~I was already wonderng why nobody cares about a Flaming Fist officer walking into here.~+ Undercel2
+++~I was already wondering why nobody cares about a Flaming Fist officer walking into here.~+ Undercel2
 ++~Let me guess, it's unofficially owned by the Fist to improve their salary?~+ Undercel2
 
 CHAIN
@@ -437,7 +437,7 @@ IF~~THEN BDCorwiJ Undercel3
 
 CHAIN
 IF~Global("EECorThNotYet","BG1200",1)~THEN BDCorwiJ ThNotYet1
-~The Iron Throne's headquarter, <CHARNAME>. Keep the location memorized but let's move on for now.~
+~The Iron Throne's headquarters, <CHARNAME>. Keep the location memorized but let's move on for now.~
 DO~SetGlobal("EECorThNotYet","BG1200",2)~
 END
 ++~I can't wait to pay those bastards my visit, Captain, why wait?~+ ThNotYet2
@@ -452,7 +452,7 @@ IF~~THEN BDCorwiJ ThNotYet2
 END
 ++~Your position is noted, Captain. Must I remind you that you put yourself under my command?~+ ThNotYet3
 ++~Very well, let's make sure that we have enough evidence against them to make it impossible they get their heads out of the noose.~+ ThNotYet3
-++~You turn out to be a nuisance and a hinderance, Captain Corwin. It's best you go back to your master Scar.~+ ThNotYet4
+++~You turn out to be a nuisance and a hindrance, Captain Corwin. It's best you go back to your master Scar.~+ ThNotYet4
 ++~I take you along since you know this town and its proceedings better than me, Corwin. Thanks for the advice.~+ ThNotYet3
 
 CHAIN
@@ -531,7 +531,7 @@ IF~~THEN BDCorwiJ CorInShista2
 CHAIN
 IF~Global("EECorwPrison","BG0607",1)~THEN BDCorwiJ EECorwPrison1
 ~<CHARNAME>, leave this *true* murderer alone, we need no scum like this. Remember I'm still a member of the REAL Flaming Fist, not that Angelo troupe.~
-=~This is MY headquarter and I get us out here while this gnome stays inside.~
+=~This is MY headquarters and I get us out here while this gnome stays inside.~
 END
 ++~No, Captain, I cannot allow you to get involved deeper with our misdeeds and compromise yourself...~+ EECorwPrison2
 ++~Corwin, of course, how could I forget. You know every inch of this building.~+ EECorwPrison3
@@ -546,7 +546,7 @@ IF~~THEN BDCorwiJ EECorwPrison3
 
 CHAIN
 IF~~THEN BDCorwiJ EECorwPrison4
-~You, the bhaalspawn criminal, you are the best option Baldur's Gate has at this moment. For my hometown, I will not stand aside idle, we must go on together.~DO~SetGlobal("EECorwPrison","BG0607",2) StartCutSceneMode() Wait(2) StartCutScene("Capcut02")~EXIT
+~You, the Bhaalspawn criminal, you are the best option Baldur's Gate has at this moment. For my home town, I will not stand aside idle, we must go on together.~DO~SetGlobal("EECorwPrison","BG0607",2) StartCutSceneMode() Wait(2) StartCutScene("Capcut02")~EXIT
 
 CHAIN
 IF~Global("EERescEltan","Locals",1)~THEN BDCorwiJ CorEltanResc1
