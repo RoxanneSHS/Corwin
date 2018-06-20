@@ -243,7 +243,7 @@ END
 
 IF ~~ THEN BEGIN J17b 
 SAY ~I'll not deny my friendship for you. Not ever. But how I feel or even what I know means little beyond these walls.~ 
-= ~Friendship moves mountains ans will be victorious in the end. I'm not feeling particularly victorious right now. Are you?~  
+= ~Friendship moves mountains and will be victorious in the end. I'm not feeling particularly victorious right now. Are you?~  
 IF ~~ THEN REPLY~Do not succumb to despair, Schael. This isn't over yet.~ GOTO J20
 IF ~~ THEN REPLY ~So long as I have friends who believe in me, I have hope.~ GOTO J20
 IF ~~ THEN REPLY ~Let's see how we're feeling after you release me from this wretched cell.~ GOTO J20
