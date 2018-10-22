@@ -3,7 +3,7 @@
 BACKUP ~CorwinEET/backup~
 AUTHOR ~Roxanne - https://baldursextendedworld.com/Corwin/ or roxanne@baldursextendedworld.com~
 
-VERSION ~v0.2b~
+VERSION ~v0.3~
 AUTO_TRA ~CorwinEET/TRA/%s~
 
 LANGUAGE ~English~ ~english~ ~CorwinEET/Tra/CorwinEET.tra~

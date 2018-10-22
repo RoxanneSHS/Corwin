@@ -21,8 +21,11 @@ IF WEIGHT #-3 ~NumberOfTimesTalkedTo(0) InParty("Corwin")~THEN Housg3 EECorwinIn
 END
 ++~We're here because we have dealings to discuss with Entar Silvershield. My associates and I have come all the way from Waterdeep. Perhaps you could leave us to our business now? ~+ 5
 ++~We're members of the Flaming Fist. There has been some worry about the security of Entar's estate.~+ 5
-IF~OR(2)Global("X#KagainCaravan","GLOBAL",5)PartyHasItem("X#SILSH")~THEN REPLY~We bring news for Lord and Lady Silvershield. We believe that we have found news of their son. Any chance this pin is one of yours?~+ 7
+IF~OR(2)Global("X#KagainCaravan","GLOBAL",5)PartyHasItem("X#SILSH")~THEN REPLY~We bring news for Lord and Lady Silvershield. We believe that we have found news of their son. Any chance this pin is one of yours?~+ Corw7
 
+CHAIN
+IF~~THEN Housg3 Corw7
+~I see that you have the household Sigil. Please go to meet Lady Silvershield directly. You can find her upstairs.~DO~EscapeAreaDestroy(30)~EXIT
 
 INTERJECT Skie 1 EECorwinSkieBG1
 ==BDCorwiJ IF~InParty("Corwin") !InParty("Eldoth")~THEN~Hello, Skie...~
