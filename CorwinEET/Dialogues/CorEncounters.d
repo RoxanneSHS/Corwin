@@ -114,7 +114,7 @@ INTERJECT Kent 0 EECorwNoDesert
 ==BDCorwiJ IF~InParty("Corwin") ~THEN~Sergeant Kent, I have not heard this last remark about deserting. Listen, man, our cause is not lost. We are here to save Eltan. You will go and report to Lieutenant Vai right away. She and Laola Axhand will regather all those who can still be trusted. The usurper Dosan will be removed pretty soon with his conveyor Sarevok.~
 ==Kent IF~InParty("Corwin") ~THEN~Aye, Captain. Thank you, ma'am, I just didn't know that all you good people are still around. I know where to find Axhand.~
 ==BDCorwiJ IF~InParty("Corwin") ~THEN~One final question, Kent. Where did they bring Scar's body, we may still be able to resurrect him?~
-==Kent IF~InParty("Corwin") ~THEN~I fear no, Captain. When they brought him to headquarter's, that scoundrel Dosan claimed there was evidence that shadow thieves did it - but nobody saw it but him. His men took the body away in haste, Leira may know to where.~
+==Kent IF~InParty("Corwin") ~THEN~I fear no, Captain. When they brought him to headquarters, that scoundrel Dosan claimed there was evidence that shadow thieves did it - but nobody saw it but him. His men took the body away in haste, Leira may know to where.~
 ==SkieJ IF~InParty("Skie") ~THEN~This is terrible... We've got to do something, <CHARNAME>... We couldn't save my father... but we've got to try and save Eltan... I owe it... to my father..~
 ==BDCorwiJ IF~InParty("Corwin") ~THEN~Scar is lost thanks to Angelo Dosan, let's focus on saving Eltan at least. We still have that time before we need to deal with Sarevok.~
 END

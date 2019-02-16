@@ -176,7 +176,7 @@ IF~Global("EECorFriend","Locals",4)~THEN BDCorwiJ Friend10
 DO~SetGlobal("EECorFriend","Locals",5) ~
 END
 ++~What are you up to, Captain?~+ Friend11
-++~This is an ambigious statement, can you explain what you mean?~+ Friend11
+++~This is an ambiguous statement, can you explain what you mean?~+ Friend11
 
 CHAIN
 IF~~THEN BDCorwiJ Friend11
@@ -433,7 +433,7 @@ END
 
 CHAIN
 IF~~THEN BDCorwiJ Undercel3
-~Members of the Flaming Fist are free to conduct their private hours as the want. At least within limits...an officer will not visit such a place. I've never been here before though I know pretty well what's going on here.~EXIT
+~Members of the Flaming Fist are free to conduct their private hours as they want. At least within limits...an officer will not visit such a place. I've never been here before though I know pretty well what's going on here.~EXIT
 
 CHAIN
 IF~Global("EECorThNotYet","BG1200",1)~THEN BDCorwiJ ThNotYet1
