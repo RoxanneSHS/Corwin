@@ -243,7 +243,7 @@ IF~~THEN BDCorwiJ Beno3
 ~Fine. Beno and I were... together. It was a long time ago, and it didn't end well, especially for him. I got Rohma, so I'm not complaining.~[BD52083]
 END
 ++~He fathered your daughter?~+ Beno5
-++~This Beno—I take it he hasn't been much involved in Rohma's life.~+ Beno5
+++~This Beno - I take it he hasn't been much involved in Rohma's life.~+ Beno5
 
 CHAIN
 IF~~THEN BDCorwiJ Beno4

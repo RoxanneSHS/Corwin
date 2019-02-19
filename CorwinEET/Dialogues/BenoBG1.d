@@ -9,7 +9,7 @@ DO~SetGlobal("EECorBeno","bg0224",4)~
 END
 ++~And you might be working for that organisation, I presume?~+ BG2
 ++~Corwin, I let you deal with him, you know him better, I suppose.~+ BG2
-++~Are you just another of those unlucky bounty hunters that cross my path? You see me still standing, they*re dead - care to join them?~+ BG2
+++~Are you just another of those unlucky bounty hunters that cross my path? You see me still standing, they're dead - care to join them?~+ BG2
 
 CHAIN
 IF~~THEN BDFamari BG2
