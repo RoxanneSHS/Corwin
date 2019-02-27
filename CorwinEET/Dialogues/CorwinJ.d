@@ -526,7 +526,7 @@ END
 
 CHAIN
 IF~~THEN BDCorwiJ CorInShista2
-~(She attempts a smile that ends up as a grin.) I have started to trust you, <CHARNAME>. Sometimes I trust you more than of my comrades in the Fist by now. There is something foul in our ranks just like it is with people in this place.~EXIT
+~(She attempts a smile that ends up as a grin.) I have started to trust you, <CHARNAME>. Sometimes I trust you more than some of my comrades in the Fist by now. There is something foul in our ranks just like it is with people in this place.~EXIT
 
 CHAIN
 IF~Global("EECorwPrison","BG0607",1)~THEN BDCorwiJ EECorwPrison1
