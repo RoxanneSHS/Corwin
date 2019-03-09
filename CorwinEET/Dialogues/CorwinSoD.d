@@ -1,7 +1,7 @@
 //Additions if Corwin was in BG1 party
 
 EXTEND_BOTTOM BDCorwin 6
-IF~Global("EECorwinBG1","Global",1)~THEN REPLY~We have adventured quite well together before. I look ahead to continue with you~ GOTO 13
+IF~Global("EECorwinBG1","Global",1)~THEN REPLY~We have adventured quite well together before. I look ahead to continue with you.~ GOTO 13
 IF~Global("EECorwinBG1","Global",1)~THEN REPLY~I have missed your company, Schael.~ GOTO 13
 END
 
@@ -10,7 +10,7 @@ ADD_TRANS_TRIGGER BDSchael 2
 
 EXTEND_BOTTOM BDSchael 2
 IF ~OR(2) Global("EECorwinBG1","Global",1) Global("EECorwinBG1","Global",51)~ THEN REPLY ~I'll live. But Imoen requires aid.~ GOTO New6
-IF ~OR(2) Global("EECorwinBG1","Global",1) Global("EECorwinBG1","Global",51)~ THEN REPLY ~Worry about that later, Corwin. We've got to move, there may be more assassins about..~ GOTO New3
+IF ~OR(2) Global("EECorwinBG1","Global",1) Global("EECorwinBG1","Global",51)~ THEN REPLY ~Worry about that later, Corwin. We've got to move, there may be more assassins about.~ GOTO New3
 END
 
 ADD_TRANS_TRIGGER BDBelt 40
