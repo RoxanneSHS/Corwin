@@ -3,27 +3,42 @@
 BACKUP ~CorwinEET/backup~
 AUTHOR ~Roxanne - https://baldursextendedworld.com/Corwin/ or roxanne@baldursextendedworld.com~
 
-VERSION ~v0.3~
+VERSION ~v0.4~
+
+ALWAYS
+ ACTION_IF GAME_IS ~bgee~ THEN BEGIN
+    INCLUDE ~CorwinEET\liam_bgee_vars.tpa~
+    END ELSE BEGIN
+    INCLUDE ~EET/other/cpmvars/eet_cpmvars.tpa~
+    END
+END
+
 AUTO_TRA ~CorwinEET/TRA/%s~
 
 LANGUAGE ~English~ ~english~ ~CorwinEET/Tra/CorwinEET.tra~
 
 BEGIN
-~Corwin NPC for EET~
-REQUIRE_PREDICATE GAME_IS ~eet~ ~This mod is exclusive for EET games~
+~Corwin NPC~
+REQUIRE_PREDICATE GAME_IS ~bgee eet~ ~This mod is exclusive for EE games~
 
-COMPILE 
+COMPILE EVALUATE_BUFFER
 ~CorwinEET/Dialogues~ 
 
-EXTEND_TOP ~bdcorwin.bcs~ ~CorwinEET/Baf/bdcorwin.baf~
+ACTION_IF GAME_IS ~bgee~ THEN BEGIN
+    COMPILE EVALUATE_BUFFER ~CorwinEET\Prison/BGNeb.d~
+    END ELSE BEGIN
+    COMPILE EVALUATE_BUFFER ~CorwinEET\Prison/EETNeb.d~
+    END
+
+EXTEND_TOP ~bdcorwin.bcs~ ~CorwinEET/Baf/bdcorwin.baf~ EVALUATE_BUFFER
 EXTEND_TOP ~BD0101.bcs~ ~CorwinEET/Baf/BD0101.baf~
-EXTEND_TOP ~bg1317.bcs~ ~CorwinEET/Baf/bg1317Rohma.baf~
-EXTEND_TOP ~BG0900.bcs~ ~CorwinEET/Baf/BG0900.baf~
-EXTEND_TOP ~bg0224.bcs~ ~CorwinEET/Baf/bg0224beno.baf~
+EXTEND_TOP ~%SEBaldursGate_TaxeksHouse_L2_BCS%.bcs~ ~CorwinEET/Baf/bg1317Rohma.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~%WyrmsCrossing_BCS%.bcs~ ~CorwinEET/Baf/BG0900.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~%WSewers_BCS%.bcs~ ~CorwinEET/Baf/bg0224beno.baf~ EVALUATE_BUFFER
 EXTEND_TOP ~bd1000.bcs~ ~CorwinEET/Baf/BD1000move.baf~
 EXTEND_TOP ~bdfamari.bcs~ ~CorwinEET/Baf/Famari.baf~
 
-COMPILE ~CorwinEET/Baf/CAPCUTEE.BAF~
+COMPILE EVALUATE_BUFFER ~CorwinEET/Baf/CAPCUTEE.BAF~
 
 COPY_EXISTING ~bd1000.are~ ~override~
 LPF ALTER_AREA_ACTOR
@@ -47,4 +62,14 @@ COPY ~CorwinEET//ITM/EEAmul.bam~ ~override~
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bgsleep.spl~ THEN BEGIN
 COPY ~CorwinEET//ITM/bgsleep.spl~ ~override~
+END
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~Rabbit01.cre~ THEN BEGIN
+COPY_EXISTING ~Rabbit.cre~ ~override/Rabbit01.cre~
+WRITE_ASCII 0x280 ~Rabbit01~
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~proslay.cre~ THEN BEGIN
+COPY_EXISTING ~proslay.cre~ ~override~
+WRITE_ASCII 0x280 ~proslay~
 END

@@ -1,21 +1,21 @@
 ADD_TRANS_ACTION Scar BEGIN 6 END BEGIN 0 END ~ CreateCreature("Corwin7",[1284.1154],1)~
 
-ADD_TRANS_ACTION Jhasso BEGIN 6 END BEGIN 0 END ~ SetGlobal("EECorDpl","BG0603",1)~
+ADD_TRANS_ACTION Jhasso BEGIN 6 END BEGIN 0 END ~ SetGlobal("EECorDpl","%SWBaldursGate_SevenSuns_Cellar%",1)~
 
-ADD_TRANS_ACTION Jhasso BEGIN 18 END BEGIN 0 END ~ SetGlobal("EECorDpl","BG0603",1)~
+ADD_TRANS_ACTION Jhasso BEGIN 18 END BEGIN 0 END ~ SetGlobal("EECorDpl","%SWBaldursGate_SevenSuns_Cellar%",1)~
 
-ADD_TRANS_ACTION Aldeth BEGIN 27 END BEGIN 0 END ~ SetGlobal("EECorDpl","BG0128",1)~
+ADD_TRANS_ACTION Aldeth BEGIN 27 END BEGIN 0 END ~ SetGlobal("EECorDpl","%SWBaldursGate_MerchantLeague_L2%",1)~
 
 I_C_T SCAR 7 EECorwinScar
-== SCAR IF ~AreaCheck("BG0900")  ~ THEN ~And..., <CHARNAME>, it may be a good idea to have someone at your side in those missions who knows a bit about this town and its subtleties.~
-== BDCorwin IF ~AreaCheck("BG0900") ~ THEN ~A bit, commander Scar?~
-== SCAR IF ~AreaCheck("BG0900")  ~ THEN ~Well, probably more than most of us, Captain, so much is sure. I like to introduce you to Captain Schael Corwin, my deputy and an officer I truly trust in these times like nobody else.~
-== BDCorwin IF ~AreaCheck("BG0900") ~ THEN ~Thank you for the merits, commander.~
-== SCAR IF ~AreaCheck("BG0900") ~ THEN ~Captain Corwin has agreed to join you for the missions that await you in the town. She will follow your orders and assist you with her knowledge. I will leave you now to acquaint yourself and agree on a cooperation.~END
+== SCAR IF ~AreaCheck("%WyrmsCrossing%")  ~ THEN ~And..., <CHARNAME>, it may be a good idea to have someone at your side in those missions who knows a bit about this town and its subtleties.~
+== BDCorwin IF ~AreaCheck("%WyrmsCrossing%") ~ THEN ~A bit, commander Scar?~
+== SCAR IF ~AreaCheck("%WyrmsCrossing%")  ~ THEN ~Well, probably more than most of us, Captain, so much is sure. I like to introduce you to Captain Schael Corwin, my deputy and an officer I truly trust in these times like nobody else.~
+== BDCorwin IF ~AreaCheck("%WyrmsCrossing%") ~ THEN ~Thank you for the merits, commander.~
+== SCAR IF ~AreaCheck("%WyrmsCrossing%") ~ THEN ~Captain Corwin has agreed to join you for the missions that await you in the town. She will follow your orders and assist you with her knowledge. I will leave you now to acquaint yourself and agree on a cooperation.~END
 
 APPEND BDCorwin
 
-IF WEIGHT #-7~AreaCheck("BG0900") Global("EECorwinScar","Global",1)~THEN BEGIN CanJoin1
+IF WEIGHT #-7~AreaCheck("%WyrmsCrossing%") Global("EECorwinScar","Global",1)~THEN BEGIN CanJoin1
 SAY~You may be a bit puzzled by our requests and our offer, <CHARNAME>. I will explain if you'd like to listen.~
 IF~~THEN REPLY~Ahem, I have not much reason to trust a Flaming Fist officer, honestly, I have already killed some of your men.~DO~SetGlobal("EECorwinScar","Global",2)~GOTO CanJoin2
 IF~Gender(Player1,MALE)~THEN REPLY~I always have time to listen to an attractive female, in her uniform or out of it.~DO~SetGlobal("EECorwinScar","Global",2)~GOTO CanJoin2a

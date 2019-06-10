@@ -9,26 +9,26 @@ StartDialogNoSet(Player1)
 END
 
 IF
-AreaCheck("BG0128")
-Global("EECorDpl","BG0128",1) 
-Global("EECorDpl","BG0603",2)
+AreaCheck("%SWBaldursGate_MerchantLeague_L2%")
+Global("EECorDpl","%SWBaldursGate_MerchantLeague_L2%",1) 
+Global("EECorDpl","%SWBaldursGate_SevenSuns_Cellar%",2)
 THEN
 RESPONSE #100
-SetGlobal("EECorDpl","BG0128",2)
+SetGlobal("EECorDpl","%SWBaldursGate_MerchantLeague_L2%",2)
 END
 
 IF
-AreaCheck("BG0603")
-Global("EECorDpl","BG0128",2) 
-Global("EECorDpl","BG0603",1)
+AreaCheck("%SWBaldursGate_SevenSuns_Cellar%")
+Global("EECorDpl","%SWBaldursGate_MerchantLeague_L2%",2) 
+Global("EECorDpl","%SWBaldursGate_SevenSuns_Cellar%",1)
 THEN
 RESPONSE #100
-SetGlobal("EECorDpl","BG0603",2)
+SetGlobal("EECorDpl","%SWBaldursGate_SevenSuns_Cellar%",2)
 END
 
 IF
 Global("EECorwinScar","Global",2)
-AreaCheck("bg1300")
+AreaCheck("%SEBaldursGate%")
 OR(2)
 See("Begbax_C")  
 See("Door0316")
@@ -40,7 +40,7 @@ END
 
 IF
 Global("EEMetRohma","Global",1)
-AreaCheck("bg1317")
+AreaCheck("%SEBaldursGate_TaxeksHouse_L2%")
 See("BDaudam")
 THEN
 RESPONSE #100
@@ -59,8 +59,8 @@ END
 
 IF
 OR(2)
-AreaCheck("bg0100")
-AreaCheck("bg0300")
+AreaCheck("%NWBaldursGate%")
+AreaCheck("%NEBaldursGate%")
 Global("EECorFriend","Locals",0)
 Delay(45)
 THEN
@@ -90,65 +90,67 @@ IncrementGlobal("EECorFriend","Locals",1)
 END
 
 IF
-Global("EECorAnm","BG4800",0)
-AreaCheck("BG4800")
+Global("EECorAnm","%Nashkel%",0)
+AreaCheck("%Nashkel%")
 Delay(36)
 THEN
 RESPONSE #100
-SetGlobal("EECorAnm","BG4800",1)
+SetGlobal("EECorAnm","%Nashkel%",1)
 END
 
 IF
-AreaCheck("BG0112")
-Global("EECorUnderc","BG0112",0)
+AreaCheck("%BaldursGate_Undercellars%")
+Global("EECorUnderc","%BaldursGate_Undercellars%",0)
+OR(2)
 See("Harlot")
+See("Proslay")
 GlobalLT("Chapter","Global",7)
 THEN
 RESPONSE #100
-SetGlobal("EECorUnderc","BG0112",1)
+SetGlobal("EECorUnderc","%BaldursGate_Undercellars%",1)
 END
 
 IF
 Global("Scarmission","Global",3)
-AreaCheck("BG1100")
-Global("EECorMoreTaskSC","bg1100",0)
+AreaCheck("%SWBaldursGate%")
+Global("EECorMoreTaskSC","%SWBaldursGate%",0)
 Delay(12)
 THEN
 RESPONSE #100
-SetGlobal("EECorMoreTaskSC","bg1100",1)
+SetGlobal("EECorMoreTaskSC","%SWBaldursGate%",1)
 END
 
 IF
-AreaCheck("BG2611")
+AreaCheck("%Candlekeep_Library_L4%")
 OR(3)
 Global("EEBendalCorw2","Global",1)
 Global("EEBendalCorw3","Global",1)
 Global("EEBendalCorw4","Global",1)
-Global("EECorwShista","BG2611",1)
+Global("EECorwShista","%Candlekeep_Library_L4%",1)
 THEN
 RESPONSE #100
 SetGlobal("EEBendalCorw2","Global",2)
-SetGlobal("EECorwShista","BG2611",2)
+SetGlobal("EECorwShista","%Candlekeep_Library_L4%",2)
 END
 
 IF
 GlobalGT("Chapter","Global",6)
 OR(16)
-AreaCheck("BG4801")
-AreaCheck("BG2616")
-AreaCheck("BG3351")
-AreaCheck("BG3304")
-AreaCheck("BG2301")
-AreaCheck("BG0105")
-AreaCheck("BG0116")
-AreaCheck("BG0119")
-AreaCheck("BG0706")
-AreaCheck("BG4003")
-AreaCheck("BG1001")
+AreaCheck("%Nashkel_Inn%")
+AreaCheck("%Candlekeep_Inn_L1%")
+AreaCheck("%Beregost_FeldepostsInn_L1%")
+AreaCheck("%Beregost_JovialJuggler_L1%")
+AreaCheck("%FriendlyArmInn_L1%")
+AreaCheck("%SEBaldursGate_Blade&Stars_L1%")
+AreaCheck("%NWBaldursGate_Helm&Cloak_L1%")
+AreaCheck("%NBaldursGate_ThreeOldKegs_L1%")
+AreaCheck("%EBaldursGate_ElfsongTavern_L2%")
+AreaCheck("%Gullykin_Winery_L1%")
+AreaCheck("%UlgothsBeard_Inn%")
 AreaCheck("bh0115")
 AreaCheck("bh0107")
-AreaCheck("BG3357")
-AreaCheck("BG0114")
+AreaCheck("%Beregost_RedSheaf_L1%")
+AreaCheck("%NEBaldursGate_BlushingMermaid_L1%")
 AreaCheck("CVRoa7")
 Global("bd_drinks_corwin","global",0)
 THEN
@@ -157,21 +159,21 @@ SetGlobal("bd_drinks_corwin","global",1)
 END
 
 IF
-AreaCheck("BG1200")
+AreaCheck("%BaldursGateDocks%")
 GlobalLT("ScarMission","GLOBAL",5)
-Global("EECorThNotYet","BG1200",0)
+Global("EECorThNotYet","%BaldursGateDocks%",0)
 OR(3)
 Range("Info0616b",15)
 Range("DOOR0611",15)
 Range("Door0616",15)
 THEN
 RESPONSE #100
-SetGlobal("EECorThNotYet","BG1200",1)
+SetGlobal("EECorThNotYet","%BaldursGateDocks%",1)
 END
 
 IF
 Global("EECorIrThr","LOCALS",0)
-AreaCheck("BG0615")
+AreaCheck("%BaldursGateDocks_IronThrone_L5%")
 Dead("ZHALIMAR")
 Dead("aasim")
 Dead("Alai")
@@ -230,19 +232,19 @@ IF
 OR(20)
 Global("EEOwnHouse","Locals",1)
 Global("EEMetRohma","Global",2)
-Global("EECorDpl","BG0603",1)
-Global("EECorDpl","BG0128",1)
+Global("EECorDpl","%SWBaldursGate_SevenSuns_Cellar%",1)
+Global("EECorDpl","%SWBaldursGate_MerchantLeague_L2%",1)
 Global("EECorwoodland","LOCALS",1)
 Global("EECorFriend","Locals",1)
 Global("EECorFriend","Locals",4)
 Global("EECorFriend","Locals",6)
-Global("EECorBeno","bg0224",1)
-Global("EECorBeno","bg0224",5)
+Global("EECorBeno","%WSewers%",1)
+Global("EECorBeno","%WSewers%",5)
 Global("bd_drinks_corwin","global",1)
-Global("EECorAnm","BG4800",1)
-Global("EECorUnderc","BG0112",1)
-Global("EECorThNotYet","BG1200",1)
-Global("EECorMoreTaskSC","bg1100",1)
+Global("EECorAnm","%Nashkel%",1)
+Global("EECorUnderc","%BaldursGate_Undercellars%",1)
+Global("EECorThNotYet","%BaldursGateDocks%",1)
+Global("EECorMoreTaskSC","%SWBaldursGate%",1)
 Global("EECorIrThr","LOCALS",1)
 Global("EEBendalCorw2","Global",2)
 Global("EERescEltan","Locals",1)
@@ -259,7 +261,7 @@ StartDialogNoSet(Player1)
 END
 
 IF
-Global("EECorwPrison","BG0607",1)
+Global("EECorwPrison","%SWBaldursGate_FlamingFistHQ_L1%",1)
 THEN
 RESPONSE #100
 Dialogue("Corwin")

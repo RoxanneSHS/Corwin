@@ -77,9 +77,9 @@ IF~~THEN BDCorwiJ Home15
 ==BDAudam~Take care, daughter, don't worry about us. We wanted go to the Hall of Wonders, Rohma. Forgot already?~DO~EscapeAreaDestroy(25)~EXIT
 
 CHAIN
-IF~OR(2) Global("EECorDpl","BG0128",1) Global("EECorDpl","BG0603",1)~THEN BDCorwiJ Sardpl1
+IF~OR(2) Global("EECorDpl","%SWBaldursGate_MerchantLeague_L2%",1) Global("EECorDpl","%SWBaldursGate_SevenSuns_Cellar%",1)~THEN BDCorwiJ Sardpl1
 ~Once more those doppelgangers...there is a pattern here and it's not the first time my suspicions have been proven right.~
-DO~SetGlobal("EECorDpl","BG0603",2) SetGlobal("EECorDpl","BG0128",2)~
+DO~SetGlobal("EECorDpl","%SWBaldursGate_SevenSuns_Cellar%",2) SetGlobal("EECorDpl","%SWBaldursGate_MerchantLeague_L2%",2)~
 END
 ++~You're supposed to be my advisor of those secrets of your town, so?~+ Sardpl2
 ++~Let's compare notes, then, Captain.~+ Sardpl2
@@ -220,9 +220,9 @@ IF~~THEN BDCorwiJ Friend23
 =~Anyway - thanks for listening. It's better to move on now. My considerations can wait another day. It's important that we get this job done. And done well.~EXIT
 
 CHAIN
-IF~Global("EECorBeno","bg0224",1)~THEN BDCorwiJ Beno1
+IF~Global("EECorBeno","%WSewers%",1)~THEN BDCorwiJ Beno1
 ~(Corwin has grabbed your arm and causes you to stop and face her. She seems to be slightly agitated.)~
-DO~SetGlobal("EECorBeno","bg0224",2)~
+DO~SetGlobal("EECorBeno","%WSewers%",2)~
 =~Listen for a minute, <CHARNAME>, I need to tell you something about my past...it may become relevant pretty soon.~
 END
 ++~You could have chosen a better place than this for conversation, Corwin.~ + Beno2
@@ -386,7 +386,7 @@ SAY ~We've a long task together ahead of us. I doubt we'll be strangers long. Bu
 IF ~~ THEN DO ~AddJournalEntry(@004,INFO)Face(10)~ EXIT
 END
 
-IF~Global("EECorAnm","BG4800",1)~THEN BEGIN InAmn1
+IF~Global("EECorAnm","%Nashkel%",1)~THEN BEGIN InAmn1
 SAY~I know we need to be here on your task, <CHARNAME>, I just hope the presence of a Flaming Fist officer doesn't get you in trouble. Tension is growing with Amn.~
 IF~~THEN REPLY~Nashkel is not Anminsh heartland, Corwin. We have a good reputation here due to our former deeds. Anyway, we will make it quick. Your concern is noted, Captain.~+ InAmn2
 IF~~THEN REPLY~*Our* task, Captain, and if anyone gets into trouble it's *we*. This town owes us and I hope they don't forget it. Otherwise, *they* may get into trouble.~+ InAmn2
@@ -395,7 +395,7 @@ END
 
 IF~~THEN BEGIN InAmn2
 SAY~I just want to make sure *we* don't load more on our platters than we need. Let's do what must be done and don't strain Tymora too much.~
-IF~~THEN DO~SetGlobal("EECorAnm","BG4800",2)~EXIT
+IF~~THEN DO~SetGlobal("EECorAnm","%Nashkel%",2)~EXIT
 END
 
 IF~~THEN BEGIN InAmn3
@@ -407,9 +407,9 @@ END
 CHAIN
 IF ~~ THEN BDCorwiJ nw133 
 ~A charismatic but sleazy guy. I'm loyal to the Flaming Fist but I doubt that he is. He is supported by someone and rose pretty quick in the ranks. ~ 
-==SHARTJ IF~InParty("SHARTEEL")~ THEN~ Ah, the maggot, the scum bag - that's how the *great hero* ends, a bloody traitor.~
+==%SHARTEEL_JOINED% IF~InParty("SHARTEEL")~ THEN~ Ah, the maggot, the scum bag - that's how the *great hero* ends, a bloody traitor.~
 ==BDCorwiJ IF~InParty("SHARTEEL")~ THEN~ You must know him even better than I do, Shar-Teel.~
-==SHARTJ IF~InParty("SHARTEEL")~ THEN~That scoundrel who copulated with that whore who called herself my mother...I have no evidence, I just know this fool too well. This Iron Throne complot is just the kind of thing he would fall for, the prospect of easy money and power and such - the whole package of pathetic male idiocy that attracts leeches like Angelo Dosan.~
+==%SHARTEEL_JOINED% IF~InParty("SHARTEEL")~ THEN~That scoundrel who copulated with that whore who called herself my mother...I have no evidence, I just know this fool too well. This Iron Throne complot is just the kind of thing he would fall for, the prospect of easy money and power and such - the whole package of pathetic male idiocy that attracts leeches like Angelo Dosan.~
 ==BDCorwiJ IF~InParty("SHARTEEL")~ THEN~ You are his daughter? Poor girl, it explains quite a bit of how you became.~
 END
 IF ~~ THEN REPLY~You mistrust your own superiors, Captain?~GOTO nw134
@@ -417,9 +417,9 @@ IF ~~ THEN REPLY~Duke Eltan shares your view on this, Captain?~GOTO nw134
 IF ~CheckStatGT(Player1,18,INT)~ THEN REPLY~Hurbold Duethkatha, he did not know about this?~ GOTO nw135
 
 CHAIN
-IF~Global("EECorUnderc","BG0112",1)~THEN BDCorwiJ Undercel1
+IF~Global("EECorUnderc","%BaldursGate_Undercellars%",1)~THEN BDCorwiJ Undercel1
 ~They don't even need to bribe the Flaming Fist to do their business down here.~
-DO~SetGlobal("EECorUnderc","BG0112",2)~
+DO~SetGlobal("EECorUnderc","%BaldursGate_Undercellars%",2)~
 END
 ++~I was already wondering why nobody cares about a Flaming Fist officer walking into here.~+ Undercel2
 ++~Let me guess, it's unofficially owned by the Fist to improve their salary?~+ Undercel2
@@ -436,9 +436,9 @@ IF~~THEN BDCorwiJ Undercel3
 ~Members of the Flaming Fist are free to conduct their private hours as they want. At least within limits...an officer will not visit such a place. I've never been here before though I know pretty well what's going on here.~EXIT
 
 CHAIN
-IF~Global("EECorThNotYet","BG1200",1)~THEN BDCorwiJ ThNotYet1
+IF~Global("EECorThNotYet","%BaldursGateDocks%",1)~THEN BDCorwiJ ThNotYet1
 ~The Iron Throne's headquarters, <CHARNAME>. Keep the location memorized but let's move on for now.~
-DO~SetGlobal("EECorThNotYet","BG1200",2)~
+DO~SetGlobal("EECorThNotYet","%BaldursGateDocks%",2)~
 END
 ++~I can't wait to pay those bastards my visit, Captain, why wait?~+ ThNotYet2
 ++~What, why spare them after all they've done to the Sword Coast - and to me?~+ ThNotYet2
@@ -465,9 +465,9 @@ IF~~THEN BDCorwiJ ThNotYet4
 DO~SetGlobal("EECorwinBG1","Global",51) EscapeAreaDestroy(50)~EXIT
 
 CHAIN
-IF~Global("EECorMoreTaskSC","bg1100",1)~THEN BDCorwiJ CorMoreTaskSC1
+IF~Global("EECorMoreTaskSC","%SWBaldursGate%",1)~THEN BDCorwiJ CorMoreTaskSC1
 ~I'm glad you accepted the additional tasks, <CHARNAME>.~
-DO~SetGlobal("EECorMoreTaskSC","bg1100",2)~
+DO~SetGlobal("EECorMoreTaskSC","%SWBaldursGate%",2)~
 END
 ++~We can really make use of that extra money.~+ CorMoreTaskSC2
 ++~I want to make sure that the right people are on my side when I need them.~+ CorMoreTaskSC3
@@ -529,7 +529,7 @@ IF~~THEN BDCorwiJ CorInShista2
 ~(She attempts a smile that ends up as a grin.) I have started to trust you, <CHARNAME>. Sometimes I trust you more than some of my comrades in the Fist by now. There is something foul in our ranks just like it is with people in this place.~EXIT
 
 CHAIN
-IF~Global("EECorwPrison","BG0607",1)~THEN BDCorwiJ EECorwPrison1
+IF~Global("EECorwPrison","%SWBaldursGate_FlamingFistHQ_L1%",1)~THEN BDCorwiJ EECorwPrison1
 ~<CHARNAME>, leave this *true* murderer alone, we need no scum like this. Remember I'm still a member of the REAL Flaming Fist, not that Angelo troupe.~
 =~This is MY headquarters and I get us out here while this gnome stays inside.~
 END
@@ -546,7 +546,7 @@ IF~~THEN BDCorwiJ EECorwPrison3
 
 CHAIN
 IF~~THEN BDCorwiJ EECorwPrison4
-~You, the Bhaalspawn criminal, you are the best option Baldur's Gate has at this moment. For my home town, I will not stand aside idle, we must go on together.~DO~SetGlobal("EECorwPrison","BG0607",2) StartCutSceneMode() Wait(2) StartCutScene("Capcut02")~EXIT
+~You, the Bhaalspawn criminal, you are the best option Baldur's Gate has at this moment. For my home town, I will not stand aside idle, we must go on together.~DO~SetGlobal("EECorwPrison","%SWBaldursGate_FlamingFistHQ_L1%",2) StartCutSceneMode() Wait(2) StartCutScene("Capcut02")~EXIT
 
 CHAIN
 IF~Global("EERescEltan","Locals",1)~THEN BDCorwiJ CorEltanResc1

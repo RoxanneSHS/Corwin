@@ -69,7 +69,7 @@ I_C_T Rielta 0 EECorRieltCandl
 ==Rielta IF~InParty("Corwin")~THEN~You'll soon see the errors of your stubborn position, Captain. I'd rather hear what <CHARNAME> has to answer.~END
 
 ADD_TRANS_ACTION Shista BEGIN 0 END BEGIN 0 1 2 END
-~SetGlobal("EECorwShista","BG2611",1)~
+~SetGlobal("EECorwShista","%Candlekeep_Library_L4%",1)~
 
 INTERJECT HUSAM2 0 EECorHussCha7
 ==Husam2 IF~InParty("Corwin")~THEN~Captain lady, you be one offa few can still turn things 'round *hic*.-~
@@ -90,9 +90,6 @@ IF~~THEN BDCorwiJ EECorHussCha7b
 CHAIN
 IF~~THEN BDCorwiJ EECorHussCha7c
 ~Truth comes from the mouth of fools and drunkards more often than you think.~EXTERN BDCorwiJ EECorHussCha7b
-
-ADD_TRANS_ACTION Neb_ BEGIN 5 END BEGIN 0 END
-~SetGlobal("EECorwPrison","BG0607",1)~
 
 I_C_T2 Sorrel 2 EESorrelCorw1
 ==BDCorwiJ IF~InParty("Corwin")~THEN~Sorrel, nothing is lost as long as the remaining comrades who are not corrupted by Angelo stand together. You know who's on our side, go spread the news that <CHARNAME> is our hope at this moment to help me solve this crisis.~
@@ -115,7 +112,7 @@ INTERJECT Kent 0 EECorwNoDesert
 ==Kent IF~InParty("Corwin") ~THEN~Aye, Captain. Thank you, ma'am, I just didn't know that all you good people are still around. I know where to find Axhand.~
 ==BDCorwiJ IF~InParty("Corwin") ~THEN~One final question, Kent. Where did they bring Scar's body, we may still be able to resurrect him?~
 ==Kent IF~InParty("Corwin") ~THEN~I fear no, Captain. When they brought him to headquarters, that scoundrel Dosan claimed there was evidence that shadow thieves did it - but nobody saw it but him. His men took the body away in haste, Leira may know to where.~
-==SkieJ IF~InParty("Skie") ~THEN~This is terrible... We've got to do something, <CHARNAME>... We couldn't save my father... but we've got to try and save Eltan... I owe it... to my father..~
+==%SKIE_JOINED% IF~InParty("Skie") ~THEN~This is terrible... We've got to do something, <CHARNAME>... We couldn't save my father... but we've got to try and save Eltan... I owe it... to my father..~
 ==BDCorwiJ IF~InParty("Corwin") ~THEN~Scar is lost thanks to Angelo Dosan, let's focus on saving Eltan at least. We still have that time before we need to deal with Sarevok.~
 END
 ++~Thanks for the information, Kent. Maybe we'll see each other again.~+ 3

@@ -1,34 +1,34 @@
 IF
 InParty("Corwin")
 Global("EEMetRohma","Global",3)
-Global("EECorBeno","bg0224",0)
+Global("EECorBeno","%WSewers%",0)
 Delay(12)
 THEN
 RESPONSE #100
-SetGlobal("EECorBeno","bg0224",1)
+SetGlobal("EECorBeno","%WSewers%",1)
 Continue()
 END
 
 IF
-Global("EECorBeno","bg0224",2)
+Global("EECorBeno","%WSewers%",2)
 InParty("Corwin")
 THEN
 RESPONSE #100
-SetGlobal("EECorBeno","bg0224",3)
+SetGlobal("EECorBeno","%WSewers%",3)
 CreateCreature("BDFamari",[266.698],10)
 CreateCreature("BDFamar1",[185.719],11)
 CreateCreature("BDFamar2",[250.770],9)
 END
 
 IF
-Global("EECorBeno","bg0224",4)
+Global("EECorBeno","%WSewers%",4)
 InParty("Corwin")
 OR(2)
 Dead("BDFamar1")
 Dead("BDFamar2")
 THEN
 RESPONSE #100
-SetGlobal("EECorBeno","bg0224",5)
+SetGlobal("EECorBeno","%WSewers%",5)
 END
 
 

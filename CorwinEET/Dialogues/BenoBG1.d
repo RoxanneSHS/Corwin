@@ -1,7 +1,7 @@
 CHAIN
-IF WEIGHT #-2~InParty("corwin") See("corwin") Global("EECorBeno","bg0224",3)~THEN BDFamari BG1
+IF WEIGHT #-2~InParty("corwin") See("corwin") Global("EECorBeno","%WSewers%",3)~THEN BDFamari BG1
 ~Helm's steely eye... Schael? Is that you?~[BD52112]
-DO~SetGlobal("EECorBeno","bg0224",4)~
+DO~SetGlobal("EECorBeno","%WSewers%",4)~
 ==BDCorwiJ~...Beno.~[BD52113]
 ==BDFamari~I'm surprised, Schael. You were always so loyal to the Flaming Fist. What makes you turn up here at the entrance of Undercellars. The Fist don't operate down here, or are you fighting your own war of justice by now?~
 ==BDCorwiJ~I accompany <CHARNAME> in <PRO_HISHER> tasks which are none of your business.~
@@ -28,9 +28,9 @@ IF~~THEN BDFamari BG3
 =~<CHARNAME>, she puts up a great front. Strait-laced Schael, daughter of the ever-stoic Audamar. Bet she didn't tell you about her younger days, running around with all types, getting them into trouble. Take care. She'll ruin you like she did me.~DO~ActionOverride("bdfamar1",Enemy()) ActionOverride("bdfamar2",Enemy()) EscapeAreaObject("Door0112")~EXIT
 
 CHAIN
-IF ~Global("EECorBeno","bg0224",5)~THEN BDCorwiJ BG4
+IF ~Global("EECorBeno","%WSewers%",5)~THEN BDCorwiJ BG4
 ~So you know him now, (sigh). I killed him twice before to keep him off Rohma. He was resurrected by foul priests each time.~
-DO~SetGlobal("EECorBeno","bg0224",6)~
+DO~SetGlobal("EECorBeno","%WSewers%",6)~
 END
 ++~You may get another chance soon if he's in league with our opponents.~+ BG5
 ++~We already suspect that this Sarevok has such priests in his service.~ + BG5

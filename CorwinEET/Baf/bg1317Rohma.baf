@@ -10,7 +10,7 @@ CreateCreature("bdaudam",[454.306],7)
 END
 
 IF
-GlobalGT("Chapter","Global",7)
+GlobalGT("Chapter","Global",%tutu_chapter_7%)
 InActiveArea("bdrohma")
 THEN
 RESPONSE #100
@@ -18,7 +18,7 @@ ActionOverride("bdrohma",DestroySelf())
 END
 
 IF
-GlobalGT("Chapter","Global",7)
+GlobalGT("Chapter","Global",%tutu_chapter_7%)
 InActiveArea("bdaudam")
 THEN
 RESPONSE #100
