@@ -37,7 +37,7 @@ END
 
 CHAIN
 IF~~THEN BDRohma Home11
-~I'm not a child. I'm—one-two-three-four-five—five years old.~
+~I'm not a child. I'm-one-two-three-four-five-five years old.~
 END
 ++~I stand corrected. ~EXTERN BDCorwiJ Home12
 ++~Treasure your years, whatever their number, child - for they will pass quickly.~EXTERN BDRohma Home14
@@ -64,7 +64,7 @@ IF~~THEN BDCorwiJ Home12
 ==BDAudam~My daughter, I told you to be more careful with your words in front of the child. She is like you were, she understands too much for her age.~
 ==BDRohma~Will you kill Sarevok?~ 
 END
-++~..I think your mother should probably answer that.~EXTERN BDCorwiJ Home15
+++~...I think your mother should probably answer that.~EXTERN BDCorwiJ Home15
 ++~I'm hoping it won't come to that.~EXTERN BDCorwiJ Home15
 
 CHAIN
