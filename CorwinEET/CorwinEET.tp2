@@ -3,7 +3,7 @@
 BACKUP ~CorwinEET/backup~
 AUTHOR ~Roxanne - https://baldursextendedworld.com/Corwin/ or roxanne@baldursextendedworld.com~
 
-VERSION ~v0.4~
+VERSION ~v0.5~
 
 ALWAYS
  ACTION_IF GAME_IS ~bgee~ THEN BEGIN
@@ -15,7 +15,7 @@ END
 
 AUTO_TRA ~CorwinEET/TRA/%s~
 
-LANGUAGE ~English~ ~english~ ~CorwinEET/Tra/CorwinEET.tra~
+LANGUAGE ~English~ ~english~ ~CorwinEET/Tra/english/CorwinEET.tra~
 
 BEGIN
 ~Corwin NPC~
