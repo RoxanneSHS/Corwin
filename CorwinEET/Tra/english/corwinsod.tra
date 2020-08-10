@@ -7,9 +7,9 @@
 @6    = ~As I've already had one attempt on my life this night, I will permit it.~
 @7    = ~We stood through worse together already <CHARNAME>.~
 @8    = ~I look ahead to continue our acquaintance, <CHARNAME>.~
-@9    = ~A healer should be here soon.~ ~Enemy forces penetrated the palace...I tried to reach Imoen and you before they did, but... well.~
+@9    = ~A healer should be here soon.~ 
 @10   = ~You did what you could, and I thank you for it. Is everyone else safe?~
-@11   = ~Are there any more up here?.~ [BD64601] ~Enemy forces penetrated the palace...I tried to reach Imoen and you before they did, but... well.~
+@11   = ~Are there any more up here?.~ [BD64601] 
 @12   = ~Not that I know of.~
 @13   = ~So. <CHARNAME>, you almost overnight became the myth. The hero of Baldur's Gate. Tell me how that feels.~
 @14   = ~You were part of it, Corwin. Forget me, I'm still the same. Tell me about Caelar.~
@@ -97,3 +97,4 @@
 @96   = ~Like Sarevok, I am a child of Bhaal. But I assure you, a father is all we share.~
 @97   = ~Regrettably, that last is true. You can choose your friends, but not your family.~
 @98   = ~There are many who would to see me fall. Spread these vile lies and you'll do nothing but help them. Is that what you want?~
+@99   = ~Enemy forces penetrated the palace...I tried to reach Imoen and you before they did, but... well.~

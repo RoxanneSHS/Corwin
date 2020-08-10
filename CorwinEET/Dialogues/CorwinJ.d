@@ -240,14 +240,14 @@ END
 
 CHAIN
 IF~~THEN BDCorwiJ Beno3
-~Fine. Beno and I were... together. It was a long time ago, and it didn't end well, especially for him. I got Rohma, so I'm not complaining.~[BD52083]
+@110
 END
 ++@111+ Beno5
 ++@112+ Beno5
 
 CHAIN
 IF~~THEN BDCorwiJ Beno4
-~Thank you, <CHARNAME>. I'd appreciate this. ~[BD58487]
+@113
 =@114
 END
 ++@108+ Beno3
@@ -255,20 +255,20 @@ END
 
 CHAIN
 IF~~THEN BDCorwiJ Beno5
-~He was there when she was conceived. He was never her father. When I told him about Rohma...~[BD52089]
-=~I was young and stupid then. Becoming a mother smartened me up fast.~[BD66687]
-=~Whatever I do in this life, whatever regrets I have, Rohma's not one of them. She never will be. I love her. Which is just one of the many reasons I'd rather avoid dying here.~[BD52094]
+@116
+=@117
+=@118
 END
 ++@119+ Beno6
 ++@120+ Beno4
 
 CHAIN
 IF~~THEN BDCorwiJ Beno6
-~There are three things in my life that matter to me, <CHARNAME>. My daughter, my father, and the Flaming Fist. Each saved me, in their own way. When one of them calls on me, I answer. Always.~[BD52096] EXIT
+@121 EXIT
 
 CHAIN
 IF~~THEN BDCorwiJ Beno7
-~I can't imagine Beno willingly telling me anything useful. There's no love for me left in his coward heart.~[BD52074]
+@122
 END
 ++@123+ Beno5
 

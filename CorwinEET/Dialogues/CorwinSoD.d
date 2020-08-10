@@ -35,14 +35,14 @@ IF~~THEN GOTO 23
 END
 
 IF~~THEN BEGIN New6
-SAY~A healer should be here soon.~
-~Enemy forces penetrated the palace...I tried to reach Imoen and you before they did, but... well.~
+SAY@9
+=@99
 IF~~THEN REPLY @10GOTO 10
 END
 
 IF~~THEN BEGIN New3
-SAY~Are there any more up here?.~[BD64601]
-~Enemy forces penetrated the palace...I tried to reach Imoen and you before they did, but... well.~
+SAY@11
+=@99
 IF~~THEN REPLY @12GOTO New6
 IF~~THEN REPLY @10GOTO 10
 END
