@@ -18,8 +18,8 @@ AUTO_TRA ~CorwinEET/TRA/%s~
 LANGUAGE ~English~ ~english~ ~CorwinEET/Tra/english/CorwinEET.tra~
 
 BEGIN
-~Corwin NPC~
-REQUIRE_PREDICATE GAME_IS ~bgee eet~ ~This mod is exclusive for EE games~
+@006
+REQUIRE_PREDICATE GAME_IS ~bgee eet~ @005
 
 COMPILE EVALUATE_BUFFER
 ~CorwinEET/Dialogues~ 
