@@ -5,7 +5,7 @@
 @4    = ~Captain Corwin? I can think of no better companion.~
 @5    = ~So we're headed to the nearest tavern, I presume? Just like we did before, fine with me.~
 @6    = ~As I've already had one attempt on my life this night, I will permit it.~
-@7    = ~We stood through worse together already <CHARNAME>.~
+@7    = ~We stood through worse together already, <CHARNAME>.~
 @8    = ~I look ahead to continue our acquaintance, <CHARNAME>.~
 @9    = ~A healer should be here soon.~ 
 @10   = ~You did what you could, and I thank you for it. Is everyone else safe?~
@@ -35,7 +35,7 @@
 @34   = ~I understand your motivation, Captain, I hope it's a temporary thing though.~
 @35   = ~Yeah, you served me well, now go and serve your Eltan if you must.~
 @36   = ~You make parting easier than I thought it would be. Good luck, <CHARNAME>.~
-@37   = ~You don't have pressing business, <CHARNAME>., why not take your time to learn about Baldur's Gate from a nicer perspective.~
+@37   = ~You don't have pressing business, <CHARNAME>, why not take your time to learn about Baldur's Gate from a nicer perspective.~
 @38   = ~I...I look ahead to see you again, my friend.~
 @39   = ~I don't believe in your guilt, <CHARNAME>, I had to come and tell you at least this.~
 @40   = ~<CHARNAME>. How are you?~ [BD54610]
