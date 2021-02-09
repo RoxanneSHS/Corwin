@@ -3,7 +3,7 @@
 BACKUP ~CorwinEET/backup~
 AUTHOR ~Roxanne - https://baldursextendedworld.com/Corwin/ or roxanne@baldursextendedworld.com~
 
-VERSION ~v0.5~
+VERSION ~v1.0~
 
 ALWAYS
  ACTION_IF GAME_IS ~bgee~ THEN BEGIN
@@ -17,6 +17,7 @@ AUTO_TRA ~CorwinEET/TRA/%s~
 
 LANGUAGE ~English~ ~english~ ~CorwinEET/Tra/english/CorwinEET.tra~
 LANGUAGE ~Deutsch~ ~german~ ~CorwinEET/Tra/german/CorwinEET.tra~
+LANGUAGE ~Russian (by tipun & p_zombie)~ ~russian~ ~CorwinEET/Tra/russian/CorwinEET.tra~
 
 BEGIN
 @006
