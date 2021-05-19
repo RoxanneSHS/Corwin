@@ -3,7 +3,7 @@
 BACKUP ~CorwinEET/backup~
 AUTHOR ~Roxanne - https://baldursextendedworld.com/Corwin/ or roxanne@baldursextendedworld.com~
 
-VERSION ~v1.0~
+VERSION ~v1.1~
 
 ALWAYS
  ACTION_IF GAME_IS ~bgee~ THEN BEGIN
@@ -36,6 +36,7 @@ EXTEND_TOP ~bdcorwin.bcs~ ~CorwinEET/Baf/bdcorwin.baf~ EVALUATE_BUFFER
 EXTEND_TOP ~BD0101.bcs~ ~CorwinEET/Baf/BD0101.baf~
 EXTEND_TOP ~%SEBaldursGate_TaxeksHouse_L2_BCS%.bcs~ ~CorwinEET/Baf/bg1317Rohma.baf~ EVALUATE_BUFFER
 EXTEND_TOP ~%WyrmsCrossing_BCS%.bcs~ ~CorwinEET/Baf/BG0900.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~%EBaldursGate_BCS%.bcs~ ~CorwinEET/Baf/BG0800.baf~ EVALUATE_BUFFER
 EXTEND_TOP ~%WSewers_BCS%.bcs~ ~CorwinEET/Baf/bg0224beno.baf~ EVALUATE_BUFFER
 EXTEND_TOP ~bd1000.bcs~ ~CorwinEET/Baf/BD1000move.baf~
 EXTEND_TOP ~bdfamari.bcs~ ~CorwinEET/Baf/Famari.baf~

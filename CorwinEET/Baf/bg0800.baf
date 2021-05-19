@@ -1,0 +1,8 @@
+IF
+Global("Chapter","GLOBAL",7)
+InParty("Corwin")
+Global("HusamMove","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("HusamMove","GLOBAL",1)
+END
