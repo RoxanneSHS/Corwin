@@ -67,6 +67,22 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~bgsleep.spl~ THEN BEGIN
 COPY ~CorwinEET//ITM/bgsleep.spl~ ~override~
 END
 
+COPY_EXISTING ~angelo.dlg~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+        REPLACE_TEXTUALLY       ~Kill(Player2)~
+                                ~~
+        REPLACE_TEXTUALLY       ~Kill(Player3)~
+                                ~~
+        REPLACE_TEXTUALLY       ~Kill(Player4)~
+                                ~~
+        REPLACE_TEXTUALLY       ~Kill(Player5)~
+                                ~~
+        REPLACE_TEXTUALLY       ~Kill(Player6)~
+                                ~~
+        REPLACE_TEXTUALLY       ~100,PIERCING~
+                                ~40,PIERCING~
+END
+
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~Rabbit01.cre~ THEN BEGIN
 COPY_EXISTING ~Rabbit.cre~ ~override/Rabbit01.cre~
 WRITE_ASCII 0x280 ~Rabbit01~
