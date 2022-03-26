@@ -11,7 +11,7 @@ END
 IF
 AreaCheck("%SWBaldursGate_MerchantLeague_L2%")
 Global("EECorDpl","%SWBaldursGate_MerchantLeague_L2%",1) 
-Global("EECorDpl","%SWBaldursGate_SevenSuns_Cellar%",2)
+Global("EECorDpl","Global",1) 
 THEN
 RESPONSE #100
 SetGlobal("EECorDpl","%SWBaldursGate_MerchantLeague_L2%",2)
@@ -19,7 +19,7 @@ END
 
 IF
 AreaCheck("%SWBaldursGate_SevenSuns_Cellar%")
-Global("EECorDpl","%SWBaldursGate_MerchantLeague_L2%",2) 
+Global("EECorDpl","Global",1) 
 Global("EECorDpl","%SWBaldursGate_SevenSuns_Cellar%",1)
 THEN
 RESPONSE #100
@@ -272,7 +272,7 @@ HPLT(Myself,11)
 HasItem("EEAmul",Myself)
 THEN
 RESPONSE #100
-ReallyForceSpellRES("BGSleep",Myself) 
+ReallyForceSpellRES("BGSleep",Myself)
 Wait(3)
 ReallyForceSpell(Myself,HEAL_NO_VISUAL) 
 END

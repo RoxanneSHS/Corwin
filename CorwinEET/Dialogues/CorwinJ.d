@@ -79,7 +79,7 @@ IF~~THEN BDCorwiJ Home15
 CHAIN
 IF~OR(2) Global("EECorDpl","%SWBaldursGate_MerchantLeague_L2%",1) Global("EECorDpl","%SWBaldursGate_SevenSuns_Cellar%",1)~THEN BDCorwiJ Sardpl1
 @40
-DO~SetGlobal("EECorDpl","%SWBaldursGate_SevenSuns_Cellar%",2) SetGlobal("EECorDpl","%SWBaldursGate_MerchantLeague_L2%",2)~
+DO~SetGlobal("EECorDpl","Global",1) SetGlobal("EECorDpl","%SWBaldursGate_SevenSuns_Cellar%",2) SetGlobal("EECorDpl","%SWBaldursGate_MerchantLeague_L2%",2)~
 END
 ++@41+ Sardpl2
 ++@42+ Sardpl2
