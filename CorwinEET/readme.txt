@@ -15,9 +15,9 @@ Features:
 - The original SoD content (including the romance) is preserved but adjusted to the possibility of her being already acquainted with the protagonist prior to the crusade. All in all the pre-SoD content is intended to give Corwin a deeper personality and make her SoD actions and decisions more transparent.
 - Not to forget that Corwin is a useful archer in BG1 and keeps her stat gains, XP, equipment etc when she joins you again in SoD.
 
-It is recommended to install also the SoD Banter Restoration mod in EET https://baldursextendedworld.com/SoD-Banters/ to complement this mod with NPC to NPC banters.
+It is recommended to install also the SoD Banter Restoration mod in EET https://github.com/RoxanneSHS/SoDBanterEET to complement this mod with NPC to NPC banters.
 
 Mod by Roxanne based on the original Corwin NPC character of the BG SoD extension.
 
-Forum: http://baldursextendedworld.com/Vanilla_Forums/categories/-corwin
-Contact: roxanne@baldursextendedworld.com
+Support: https://github.com/RoxanneSHS/Corwin/issues
+Contact: Roxanne0Walsh@gmail.com

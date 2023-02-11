@@ -1,9 +1,9 @@
 // Corwin NPC for EET
 
 BACKUP ~CorwinEET/backup~
-AUTHOR ~Roxanne - https://baldursextendedworld.com/Corwin/ or roxanne@baldursextendedworld.com~
+AUTHOR ~Roxanne - https://github.com/RoxanneSHS/Corwin~
 
-VERSION ~v1.1~
+VERSION ~v1.2~
 
 ALWAYS
  ACTION_IF GAME_IS ~bgee~ THEN BEGIN
@@ -31,6 +31,12 @@ ACTION_IF GAME_IS ~bgee~ THEN BEGIN
     END ELSE BEGIN
     COMPILE EVALUATE_BUFFER ~CorwinEET\Prison/EETNeb.d~
     END
+    
+ACTION_IF GAME_IS ~bgee~ THEN BEGIN
+COPY_EXISTING ~Pdialog.2da~ ~override~
+REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~BDCORWIP~
+   ~BDCORWIN   	~BUT_ONLY
+  END
 
 EXTEND_TOP ~bdcorwin.bcs~ ~CorwinEET/Baf/bdcorwin.baf~ EVALUATE_BUFFER
 EXTEND_TOP ~BD0101.bcs~ ~CorwinEET/Baf/BD0101.baf~
