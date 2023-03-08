@@ -546,7 +546,7 @@ IF~~THEN BDCorwiJ EECorwPrison3
 
 CHAIN
 IF~~THEN BDCorwiJ EECorwPrison4
-@241DO~SetGlobal("EECorwPrison","%SWBaldursGate_FlamingFistHQ_L1%",2) StartCutSceneMode() Wait(2) StartCutScene("Capcut02")~EXIT
+@241DO~SetGlobal("EECorwPrison","%SWBaldursGate_FlamingFistHQ_L1%",2) StartCutSceneMode() Wait(2) StartCutScene("CapcutEE")~EXIT
 
 CHAIN
 IF~Global("EERescEltan","Locals",1)~THEN BDCorwiJ CorEltanResc1
