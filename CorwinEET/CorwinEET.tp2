@@ -3,7 +3,7 @@
 BACKUP ~CorwinEET/backup~
 AUTHOR ~Roxanne - https://github.com/RoxanneSHS/Corwin~
 
-VERSION ~v1.2~
+VERSION ~v1.3~
 
 ALWAYS
  ACTION_IF GAME_IS ~bgee~ THEN BEGIN
@@ -18,6 +18,7 @@ AUTO_TRA ~CorwinEET/TRA/%s~
 LANGUAGE ~English~ ~english~ ~CorwinEET/Tra/english/CorwinEET.tra~
 LANGUAGE ~Deutsch~ ~german~ ~CorwinEET/Tra/german/CorwinEET.tra~
 LANGUAGE ~Russian (by tipun & p_zombie)~ ~russian~ ~CorwinEET/Tra/russian/CorwinEET.tra~
+LANGUAGE ~Simplified Chinese (by yoshimo0417)~ ~schinese~ ~ShineOnCaelar/TRA/CorwinEET.tra~
 
 BEGIN
 @006
